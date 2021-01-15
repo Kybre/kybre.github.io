@@ -1,6 +1,57 @@
 body{
-    font-family: 'Bahnschrift',sans-serif;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+img{
+  width: 100%;
+}
+
+.box{
+    display:flex;
+    flex-wrap:wrap;
+
+    justify-content:left;
+}
+
+.about{
+    margin-top: 7rem;
+    /* background-color: #00000020; */
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.content{
+    animation: fadein 1s ease-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.abt-flex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.abt-img{
+    width: calc(40% - 1.5rem);
+}
+
+.abt-text{
+  width: calc(60% - 1.5rem);
+}
+
+.abt-para{
+  margin-bottom: 2rem;
+}
+
+.contact-icon{
+  width: 4rem;
+  margin-right: 1rem;
 }
