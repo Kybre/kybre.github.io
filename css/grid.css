@@ -1,6 +1,13 @@
+html{
+    background-color: #E8E8E8;
+    /*
+    From the MIT licensed normalize.css file
+    */
+    font-family: sans-serif;
+}
 body{
     font-family: 'Lato',sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -8,20 +15,6 @@ body{
 
 img{
   width: 100%;
-}
-
-.box{
-    display:flex;
-    flex-wrap:wrap;
-
-    justify-content:left;
-}
-
-.about{
-    margin-top: 7rem;
-    /* background-color: #00000020; */
-    padding-left: 3rem;
-    padding-right: 3rem;
 }
 
 .content{
@@ -33,6 +26,13 @@ img{
     to   { opacity: 1; }
 }
 
+/*About Page*/
+.about{
+    margin-top: 7rem;
+    /* background-color: #00000020; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
 
 .abt-flex{
     display:flex;
@@ -54,4 +54,33 @@ img{
 .contact-icon{
   width: 4rem;
   margin-right: 1rem;
+}
+
+/*Home Page*/
+.item{
+  display: flex;
+  flex-direction: column;
+}
+
+.item a{
+  display: flex;
+  margin: 0 2rem 0 2rem;
+  padding: 2rem 0 2rem 0;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 3px solid #CFCFCF;
+  background-color: #E8E8E8;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.item a:hover{
+  background-color: #BBBBBB;
+}
+
+.item img{
+  width: calc(40% - 1.5rem);
+}
+
+.item-desc{
+  margin-left: 2rem;
 }
