@@ -94,4 +94,10 @@ img{
   #proj-header{
     width: 100%;
   }
+  .item a{
+    flex-direction: column;
+  }
+  .item img{
+    width: 100%;
+  }
 }

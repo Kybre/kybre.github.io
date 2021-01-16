@@ -1,22 +1,22 @@
 let data = [
 	{
-		img: "img/Kingslayer.png",
+		img: "./img/Kingslayer/Kingslayer.png",
   	title: "Kingslayer",
-    content: "A bullet hell game developed in Processing.",
+    content: "A high-action, platformer bullet hell game developed in Processing.",
 		link: "kingslayer.html"
   },
-  {
-		img: "",
-  	title: "totle2",
-    content: "sdfsdfds",
-		link: "2.html"
-  },
 	{
-		img: "",
-		title: "totle3",
-		content: "sdfsdfds",
-		link: "3.html"
+		img: "./img/KMSRT/kmsrt.png",
+		title: "Kalmont Mountain Safety and Rescue Team Website",
+		content: "A fictional website for the Kalmont Mountain Safety and Rescue Team Website containing local news and tips and tricks on winter outdoors safety.",
+		link: "kmsrt.html"
 	},
+  {
+		img: "./img/MineDiamonds/MineDiamonds.png",
+  	title: "Mine Diamonds",
+    content: "An interactive project made with Arduino and Processing.",
+		link: "minediamonds.html"
+  }
 ]
 
 const parent = document.querySelector("#main");
