@@ -104,6 +104,18 @@ img{
   margin-bottom: 1rem;
 }
 
+.proj-vid{
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.proj-vid iframe{
+  width: 100%;
+  height: 100%;
+  min-height: 315px;
+}
+
 .proj-process{
   display: flex;
 }
@@ -154,10 +166,20 @@ img{
   }
   .proj-process{
     flex-direction: column;
+    width: 100%
   }
   .proj-process-item{
-    width: 80%;
+    width: 100%;
     margin-bottom: 1rem;
+  }
+  .proj-img-smaller{
+    width: 100%;
+  }
+  .proj-img{
+    width: 100%;
+  }
+  .proj-vid{
+    width: 100%;
   }
 }
 
@@ -169,17 +191,5 @@ img{
   #proj-header{
     padding-bottom: 3rem;
     -webkit-mask-image:-webkit-gradient(linear, left top, left 75%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  }
-  .proj-process{
-    width: 100%;
-  }
-  .proj-process-item{
-    width: 100%;
-  }
-  .proj-img-smaller{
-    width: 100%;
-  }
-  .proj-img{
-    width: 100%;
   }
 }
