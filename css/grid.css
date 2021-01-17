@@ -82,10 +82,6 @@ img{
   margin-bottom: 2rem;
 }
 
-.proj-link{
-  width: 3rem;
-}
-
 .disclaimer{
   display: inline;
 }
@@ -147,8 +143,6 @@ img{
   .abt-text{
     width: 100%;
   }
-
-
   .item a{
     flex-direction: column;
   }
