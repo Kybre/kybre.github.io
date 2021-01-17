@@ -13,6 +13,10 @@ h1{
   margin-bottom: 1.5rem;
 }
 
+#proj-title{
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 400px) {
   h1{
     font-size: 2.5rem;
