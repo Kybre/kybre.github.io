@@ -126,6 +126,14 @@ img{
   margin-right: 2rem;
 }
 
+.proj-60{
+  width: 60%;
+}
+
+.proj-40{
+  width: 40%;
+}
+
 .proj-img figcaption{
   padding-left: 0.5rem;
   border-left: 3px solid #DDDDDD;
@@ -180,6 +188,14 @@ img{
   }
   .proj-vid{
     width: 100%;
+  }
+  .proj-60{
+    width: 80%;
+    align-self: center;
+  }
+  .proj-40{
+    width: 80%;
+    align-self: center;
   }
 }
 
