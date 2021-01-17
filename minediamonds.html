@@ -44,10 +44,53 @@
         </ul>
 
         <h2>Project Description</h2>
+        Mine Diamonds is an interactive application made with Arduino and Processing as part of the class IAT 267: Introduction to Technological Systems at SFU. <br><br>
+        Mine Diamonds consists of both physical and software components, which interact with each other through Arduino to create a cohesive interactive system. <br><br>
+        Through this project, I wanted to explore interaction with non-digital mediums, and how to make those interactions meaningful to an end-user.
+        <div class="proj-img">
+          <img src="img/MineDiamonds/controller.png" alt="Mine Diamonds controller." class="proj-img-smaller">
+          <figcaption>Image of the physical interface for Mine Diamonds.</figcaption>
+        </div>
+
         <h2>Features</h2>
+        Mine Diamonds consists of a small treasure hunting/mine detecting game where the player is tasked with uncovering all the treasures scattered throughout the game environment while avoiding mines, aided by a physical controller that helps them in detecting both. <br><br>
+        The physical controller contains 2 LEDs, blue and red, that correspond to treasure detection and mine detection respectively. Whenever the mouse is close to a game object, the respective LED will blink at a frequency corresponding to how close the mouse is to the object, and a speaker also beeps in distinct tones for auditory feedback. <br><br>
+        When close to treasure, the player can click using the mouse in order to activate a minigame that requires them to keep a force indicator at a certain target, uncovering the treasure after a couple of seconds. The player wins by uncovering all the treasures, and loses when they uncover too many mines.
+        <div class="proj-img">
+          <img src="img/MineDiamonds/gameplay.png" alt="Mine Diamonds gameplay." class="proj-img-smaller">
+          <figcaption>Image of near-start gameplay. Here, the player has discovered the location of treasure and is trying to uncover it.</figcaption>
+        </div>
+
         <h2>Planning and Proposal</h2>
+        In planning this project, me and Jonathan decided to split the workload by physical and digital work in order to adapt to COVID-19 times. While I personally wish the workload could have been split in a different manner, at the time, this was the best solution we could agree on to follow the social guidelines set for COVID-19.
+        <div class="proj-img proj-process">
+          <div class="proj-process-item">
+            <img src="img/MineDiamonds/interaction.png" alt="Interaction diagram for Mine Diamonds.">
+            <figcaption>Interaction diagram for Mine Diamonds.</figcaption>
+          </div>
+          <div class="proj-process-item">
+            <img src="img/MineDiamonds/schematic.png" alt="Circuit schematic for Mine Diamonds.">
+            <figcaption>Circuit schematic for Mine Diamonds.</figcaption>
+          </div>
+        </div>
+
         <h2>Development</h2>
+        During development, my role was mainly to write the Arduino code and make proper amends in the Processing application, which was left mostly to Jonathan.
+        <div class="proj-img">
+            <img src="img/MineDiamonds/arduino.png" alt="Arduino development for Mine Diamonds.">
+            <figcaption>Sample Arduino code for Mine Diamonds. Shown above is the setup code as well as the code for writing/reading Arduino values, and red LED/speaker functionality. </figcaption>
+        </div>
+
+        <div class="proj-img">
+            <img src="img/MineDiamonds/processing.png" alt="Circuit schematic for Mine Diamonds.">
+            <figcaption>Sample Processing code for Mine Diamonds. Shown above is the code for reading force sensor values, as well as LED value calculation, respresentation, and Arduino communication.</figcaption>
+        </div>
+
         <h2>Takeaways</h2>
+        Overall, I believe this project helped me understand and expand my horizons on how physical interfaces can be incorporated with digital applications in designing interactive systems. I hope to be able to use this knowledge to better utilize physical interfaces in my projects in the future, and build cohesive applications that are intuitive to use.
+
+        <h2>Project Demonstration</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ykkqZPFhs4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
   </body>
