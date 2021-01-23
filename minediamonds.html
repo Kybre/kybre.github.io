@@ -33,6 +33,7 @@
       <img src="img/MineDiamonds/MineDiamonds.png" alt="Image of Mine Diamonds Application" id="proj-header">
       <div class="proj">
         <h1 id="proj-title">Mine Diamonds</h1>
+        <h3 id="proj-cat">Game Design/Development Project</h3>
         Role: Designer/Developer <br><br>
         Collaborators: Jonathan Newman (Software) <br><br>
         Duration: 3-4 weeks (November 2020 - December 2020) <br><br>
@@ -62,6 +63,7 @@
         </div>
 
         <h2>Planning and Proposal</h2>
+        We decided to create a game because we knew we would be able to innovate through the physical interface with our knowledge in games. Taking inspiration from metal detectors, we designed a treasure hunting game around the idea of players using the physical indicator as a tool to find treasure. <br> <br>
         In planning this project, me and Jonathan decided to split the workload by physical and digital work in order to adapt to COVID-19 times. While I personally wish the workload could have been split in a different manner, at the time, this was the best solution we could agree on to follow the social guidelines set for COVID-19.
         <div class="proj-img proj-process">
           <div class="proj-process-item">
@@ -75,7 +77,8 @@
         </div>
 
         <h2>Development</h2>
-        During development, my role was mainly to write the Arduino code and make proper amends in the Processing application, which was left mostly to Jonathan.
+        During development, my role was mainly to write the Arduino code and make proper amends in the Processing application, which was left mostly to Jonathan. <br> <br>
+        Here, one challenge I ran into was making the proximity of treasure and mines clear to the player while utilizing the same speaker. My solution was to not only give mine detection and treasure detection their own unique tones, but also individual rates of output for each sound that match with the rate of the LEDs blinking on the physical interface. By correlating pitch and output rate to proximity, I could better separate the two signals so that a player could easily understand how close they are to mines or treasure.  
         <div class="proj-img">
             <img src="img/MineDiamonds/arduino.png" alt="Arduino development for Mine Diamonds.">
             <figcaption>Sample Arduino code for Mine Diamonds. Shown above is the setup code as well as the code for writing/reading Arduino values, and red LED/speaker functionality. </figcaption>
