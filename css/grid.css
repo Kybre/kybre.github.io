@@ -204,6 +204,9 @@ img{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  audio{
+    width: 200px;
+  }
   #proj-header{
     padding-bottom: 3rem;
     -webkit-mask-image:-webkit-gradient(linear, left top, left 75%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
