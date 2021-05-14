@@ -1,5 +1,12 @@
 let data = [
 	{
+		img: "./img/EiSC/title.png",
+		title: "Emergency in Section C",
+		ctgr: "Game Design/Development Project",
+		content: "A emergency-themed platformer developed in Unity for the May 2021 Make-A-Level Game Jam.",
+		link: "emergency-in-section-c.html"
+	},
+	{
 		img: "./img/Kingslayer/Kingslayer.png",
   	title: "Kingslayer",
 		ctgr: "Game Design/Development Project",
