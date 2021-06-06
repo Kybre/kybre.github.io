@@ -23,7 +23,7 @@ let data = [
   {
 		img: "./img/MineDiamonds/MineDiamonds.png",
   	title: "Mine Diamonds",
-		ctgr: "Game Design/Development Project",
+		ctgr: "Arduino Design/Development Project",
     content: "An interactive application made with Arduino and Processing.",
 		link: "minediamonds.html"
   }
