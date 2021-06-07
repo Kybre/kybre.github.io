@@ -32,7 +32,7 @@ let data = [
   	title: "Mine Diamonds",
 		ctgr: "Arduino Design/Development Project",
     content: "An interactive application made with Arduino and Processing.",
-		link: "minediamonds"
+		link: "mine-diamonds"
   }
 ]
 
