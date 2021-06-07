@@ -1,5 +1,12 @@
 let data = [
 	{
+		img:"./img/Scrapbook/title.png",
+		title:"Scrapbook",
+		ctgr:"UI/UX Project",
+		content:"A children's mental health journal created during Hack4Health 2021.",
+		link:"scrapbook.html",
+	},
+	{
 		img: "./img/EiSC/title.png",
 		title: "Emergency in Section C",
 		ctgr: "Game Design/Development Project",
