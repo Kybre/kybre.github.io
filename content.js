@@ -34,13 +34,6 @@ let data = [
 		content: "A fictional website for the Kalmont Mountain Safety and Rescue Team Website containing local news and tips and tricks on winter outdoors safety.",
 		link: "kmsrt"
 	},
-  {
-		img: "./img/MineDiamonds/MineDiamonds.png",
-  	title: "Mine Diamonds",
-		ctgr: "Arduino Design/Development Project",
-    content: "An interactive application made with Arduino and Processing.",
-		link: "mine-diamonds"
-  }
 ]
 
 const parent = document.querySelector("#main");
