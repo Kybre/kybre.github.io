@@ -143,6 +143,14 @@ img{
   width: 80%;
 }
 
+.no-audio video::-webkit-media-controls-volume-slider {
+display:none;
+}
+
+.no-audio video::-webkit-media-controls-mute-button {
+display:none;
+}
+
 @media screen and (max-width: 900px) { /*site changes at 900px*/
   #proj-header{
     width: 100%;

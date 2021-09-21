@@ -1,5 +1,12 @@
 let data = [
 	{
+		img:"./img/MonkeyMobius/title.png",
+		title:"Monkey Mobius",
+		ctgr:"Game Design/Development Project",
+		content:"A infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Participant's Choice award.",
+		link:"monkey-mobius",
+	},
+	{
 		img:"./img/Scrapbook/title.png",
 		title:"Scrapbook",
 		ctgr:"UI/UX Project",
