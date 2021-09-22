@@ -10,7 +10,7 @@ let data = [
 		img:"./img/HellGene/title.png",
 		title:"Hell Gene",
 		ctgr:"Game Design/Development Project",
-		content:"An chaos-themed, top-down hack n' slash developed in Unity for Brackey's Game Jam 2021.2.",
+		content:"An chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
 		link:"hell-gene",
 	},
 	{
