@@ -151,6 +151,10 @@ display:none;
 display:none;
 }
 
+.bg-dark{
+  background-color: #474747
+}
+
 @media screen and (max-width: 900px) { /*site changes at 900px*/
   #proj-header{
     width: 100%;

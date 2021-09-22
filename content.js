@@ -7,6 +7,13 @@ let data = [
 		link:"monkey-mobius",
 	},
 	{
+		img:"./img/HellGene/title.png",
+		title:"Hell Gene",
+		ctgr:"Game Design/Development Project",
+		content:"An chaos-themed, top-down hack n' slash developed in Unity for Brackey's Game Jam 2021.2.",
+		link:"hell-gene",
+	},
+	{
 		img:"./img/Scrapbook/title.png",
 		title:"Scrapbook",
 		ctgr:"UI/UX Project",
@@ -17,7 +24,7 @@ let data = [
 		img: "./img/EiSC/title.png",
 		title: "Emergency in Section C",
 		ctgr: "Game Design/Development Project",
-		content: "A emergency-themed platformer developed in Unity for the May 2021 Make-A-Level Game Jam.",
+		content: "An emergency-themed platformer developed in Unity for the May 2021 Make-A-Level Game Jam.",
 		link: "emergency-in-section-c"
 	},
 	{
