@@ -4,7 +4,7 @@ let data = [
 		title:"Unfabled",
 		ctgr:"Game Design/Development Project",
 		content:"A fast-paced, spell-slinging action game developed in Unity for Ludum Dare 49.",
-		link:"monkey-mobius",
+		link:"unfabled",
 	},
 	{
 		img:"./img/MonkeyMobius/title.png",
