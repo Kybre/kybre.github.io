@@ -1,16 +1,23 @@
 let data = [
 	{
+		img:"./img/Unfabled/cover.png",
+		title:"Unfabled",
+		ctgr:"Game Design/Development Project",
+		content:"A fast-paced, spell-slinging action game developed in Unity for Ludum Dare 49.",
+		link:"monkey-mobius",
+	},
+	{
 		img:"./img/MonkeyMobius/title.png",
 		title:"Monkey Mobius",
 		ctgr:"Game Design/Development Project",
-		content:"A infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Participant's Choice award.",
+		content:"An infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Participant's Choice award.",
 		link:"monkey-mobius",
 	},
 	{
 		img:"./img/HellGene/title.png",
 		title:"Hell Gene",
 		ctgr:"Game Design/Development Project",
-		content:"An chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
+		content:"A chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
 		link:"hell-gene",
 	},
 	{
