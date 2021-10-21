@@ -35,9 +35,9 @@
       <div class="proj">
         <h1 id="proj-title">Mine Diamonds</h1>
         <h3 id="proj-cat">Arduino Design/Development Project</h3>
-        Role: Designer/Developer <br><br>
-        Collaborators: Jonathan Newman (Software) <br><br>
-        Duration: 3-4 weeks (November 2020 - December 2020) <br><br>
+        Role: Designer/Developer <br/><br/>
+        Collaborators: Jonathan Newman (Software) <br/><br/>
+        Duration: 3-4 weeks (November 2020 - December 2020) <br/><br/>
         Tools Used:
         <ul>
           <li>Processing (Development)</li>
@@ -46,8 +46,8 @@
         </ul>
 
         <h2>Project Description</h2>
-        Mine Diamonds is an interactive application made with Arduino and Processing as part of the class IAT 267: Introduction to Technological Systems at SFU. <br><br>
-        Mine Diamonds consists of both physical and software components, which interact with each other through Arduino to create a cohesive interactive system. <br><br>
+        Mine Diamonds is an interactive application made with Arduino and Processing as part of the class IAT 267: Introduction to Technological Systems at SFU. <br/><br/>
+        Mine Diamonds consists of both physical and software components, which interact with each other through Arduino to create a cohesive interactive system. <br/><br/>
         Through this project, I wanted to explore interaction with non-digital mediums, and how to make those interactions meaningful to an end-user.
         <div class="proj-img">
           <img src="img/MineDiamonds/controller.png" alt="Mine Diamonds controller." class="proj-img-smaller">
@@ -55,8 +55,8 @@
         </div>
 
         <h2>Features</h2>
-        Mine Diamonds consists of a small treasure hunting/mine detecting game where the player is tasked with uncovering all the treasures scattered throughout the game environment while avoiding mines, aided by a physical controller that helps them in detecting both. <br><br>
-        The physical controller contains 2 LEDs, blue and red, that correspond to treasure detection and mine detection respectively. Whenever the mouse is close to a game object, the respective LED will blink at a frequency corresponding to how close the mouse is to the object, and a speaker also beeps in distinct tones for auditory feedback. <br><br>
+        Mine Diamonds consists of a small treasure hunting/mine detecting game where the player is tasked with uncovering all the treasures scattered throughout the game environment while avoiding mines, aided by a physical controller that helps them in detecting both. <br/><br/>
+        The physical controller contains 2 LEDs, blue and red, that correspond to treasure detection and mine detection respectively. Whenever the mouse is close to a game object, the respective LED will blink at a frequency corresponding to how close the mouse is to the object, and a speaker also beeps in distinct tones for auditory feedback. <br/><br/>
         When close to treasure, the player can click using the mouse in order to activate a minigame that requires them to keep a force indicator at a certain target, uncovering the treasure after a couple of seconds. The player wins by uncovering all the treasures, and loses when they uncover too many mines.
         <div class="proj-img">
           <img src="img/MineDiamonds/gameplay.png" alt="Mine Diamonds gameplay." class="proj-img-smaller">
@@ -64,7 +64,7 @@
         </div>
 
         <h2>Planning and Proposal</h2>
-        We decided to create a game because we knew we would be able to innovate through the physical interface with our knowledge in games. Taking inspiration from metal detectors, we designed a treasure hunting game around the idea of players using the physical indicator as a tool to find treasure. <br> <br>
+        We decided to create a game because we knew we would be able to innovate through the physical interface with our knowledge in games. Taking inspiration from metal detectors, we designed a treasure hunting game around the idea of players using the physical indicator as a tool to find treasure. <br/> <br/>
         In planning this project, me and Jonathan decided to split the workload by physical and digital work in order to adapt to COVID-19 times. While I personally wish the workload could have been split in a different manner, at the time, this was the best solution we could agree on to follow the social guidelines set for COVID-19.
         <div class="proj-img proj-process">
           <div class="proj-process-item">
@@ -78,7 +78,7 @@
         </div>
 
         <h2>Development</h2>
-        During development, my role was mainly to write the Arduino code and make proper amends in the Processing application, which was left mostly to Jonathan. <br> <br>
+        During development, my role was mainly to write the Arduino code and make proper amends in the Processing application, which was left mostly to Jonathan. <br/> <br/>
         Here, one challenge I ran into was making the proximity of treasure and mines clear to the player while utilizing the same speaker. My solution was to not only give mine detection and treasure detection their own unique tones, but also individual rates of output for each sound that match with the rate of the LEDs blinking on the physical interface. By correlating pitch and output rate to proximity, I could better separate the two signals so that a player could easily understand how close they are to mines or treasure.
         <div class="proj-img">
             <img src="img/MineDiamonds/arduino.png" alt="Arduino development for Mine Diamonds.">
