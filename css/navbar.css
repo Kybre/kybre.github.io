@@ -13,8 +13,12 @@
 
 .sidenav ul{
   list-style-type: none;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidenav img{
@@ -35,7 +39,7 @@
 }
 
 .sidenav .text-link{
-  margin: 0rem 3rem .25rem 3rem;
+  display: inline-block;
 }
 
 /* Underline Animation
@@ -59,7 +63,7 @@ Tutorial from: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
 
 .text-link a:hover::before {
   visibility: visible;
-  transform: scaleX(0.6);
+  transform: scaleX(1);
 }
 
 a:visited{
