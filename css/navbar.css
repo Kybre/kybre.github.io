@@ -72,7 +72,6 @@ a:visited{
 
 /* Style page content */
 #main {
-  margin-left: 15rem; /* Same as the width of the sidebar */
 }
 
 /* On screens that are less than 800px wide, make the sidebar into a topbar */

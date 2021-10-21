@@ -11,6 +11,11 @@ h1{
   font-size: 3.5rem;
   font-weight: normal;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-title{
+  font-size: 3.5rem;
 }
 
 #proj-title{

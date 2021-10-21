@@ -9,6 +9,7 @@ img{
 
 .content{
     animation: fadein 1s ease-out;
+    margin-left: 15rem;
 }
 
 @keyframes fadein {
@@ -18,10 +19,9 @@ img{
 
 /*About Page*/
 .about{
-    margin-top: 7rem;
+    padding: 2rem;
     /* background-color: #00000020; */
-    padding-left: 4rem;
-    padding-right: 4rem;
+    border-bottom: 3px solid #DDDDDD;
 }
 
 .abt-flex{
@@ -47,6 +47,13 @@ img{
 }
 
 /*Home Page*/
+
+.section-header{
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #DDDDDD;
+}
+
 .item{
   display: flex;
   flex-direction: column;
