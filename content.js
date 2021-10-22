@@ -22,7 +22,7 @@ let gameData = [
 		img:"./img/Unfabled/cover.png",
 		title:"Unfabled",
 		ctgr:"Game Design/Development Project",
-		content:"A fast-paced, spell-slinging action game developed in Unity for Ludum Dare 49.",
+		content:"A fast-paced, spell-slinging action game developed in Unity for Ludum Dare 49. \n Rated Top 20% Overall in the Jam category.",
 		tools:"Unity, C#",
 		link:"unfabled",
 	},
