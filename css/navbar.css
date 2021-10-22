@@ -71,15 +71,16 @@ a:visited{
 }
 
 /* Style page content */
-#main {
-}
 
-/* On screens that are less than 800px wide, make the sidebar into a topbar */
-@media screen and (max-width: 900px) {
+/* On screens that are less than 900px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1000px) {
   .sidenav {
     width: 100%;
     height: auto;
     position: relative;
+  }
+  .sidenav ul{
+    flex-direction: row;
   }
   .sidenav img{
     width: 5rem;
@@ -94,9 +95,6 @@ a:visited{
   .text-link a{
     margin-top: 5rem;
   }
-  #main{
-    margin-left: 0;
-  }
   .text-link a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -104,11 +102,14 @@ a:visited{
   div.content {margin-left: 0;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+/* On screens that are less than 550px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 550px) {
   .sidenav a {
     text-align: center;
     float: none;
+  }
+  .sidenav ul{
+    flex-direction: column;
   }
   .sidenav img{
     margin-left: 0;
