@@ -48,76 +48,77 @@
           <li>C# (Development)</li>
         </ul>
 
-      <h2>Project Description</h2>
-      Unfabled is a game created for Ludum Dare 49 under the theme of "Unstable", drawing inspiration by fact-paced actions and Magicka-styled spell slinging. The game went on to place in the top 20% under the Jam event.<br/><br/>
-      In Unfabled, you play as a mad wizard whose horse has been stolen from its stable! Standing between you and your horse is a treacherous forest filled with beasts and guards attempting to stop you in your path. <br/><br/>
-      Throughout this project, my main objective was to take charge of the project with a heavy focus on design elements.
+        <h2>Project Description</h2>
+        Unfabled is a game created for Ludum Dare 49 under the theme of "Unstable", drawing inspiration by fact-paced actions and Magicka-styled spell slinging. The game went on to place in the top 20% under the Jam event.<br/><br/>
+        In Unfabled, you play as a mad wizard whose horse has been stolen from its stable! Standing between you and your horse is a treacherous forest filled with beasts and guards attempting to stop you in your path. <br/><br/>
+        Throughout this project, my main objective was to take charge of the project with a heavy focus on design elements.
 
-      <div class="proj-img proj-process-item">
-        <img src="img/Unfabled/gameplay2.png" alt="Gameplay image for Unfabled.">
-        <figcaption>Gameplay image for Unfabled.</figcaption>
-      </div>
-
-      <h2>Core Gameplay Design</h2>
-
-      Similar to previous game jams, my team first discussed how to dissect the definition of the word "Unstable" at the beginning of the jam, and how to convey those definitions to a player. We settled on the idea of unstable spell-casting, and converted that idea into the core gameplay identity of Unfabled. <br/><br/>
-      The core gameplay of Unfabled consists of players selecting spells in a short timeframe against oncoming waves of enemies, with the intent of making the character feel powerful through strong visual and auditory feedback. <br/><br/>
-      In order to ensure that I could accurately design for the player experience, I opted to employ a 3C (Character, Controls, Camera) framework to help define what the player should experience from our designs, acting as a razor for the design of our game. <br/><br/>
-
-      <div class="proj-img proj-process-item proj-60">
-        <img src="img/Unfabled/gdd.png" alt="Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.">
-        <figcaption>Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.</figcaption>
-      </div>
-
-      <h2>Spells and Enemies</h2>
-
-      In designing spells and enemies, making sure that everything had unique behaviours and properties was essential to emphasizing the randomness of spellcasting and presenting a lack of order within the game, helping to sell the theme of "Unstable". <br/><br/>
-      For example, Scald and Lava Spray both act as beams that extend from the player's position. <br/><br/>
-      On one hand, Scald is a thinner, faster beam with high knockback, focused on quickly pushing enemies back. On the other hand, Lava Spray is a wider, slower beam that requires a bigger commitment, focused on killing enemies through the spell's high damage. <br/><br/>
-      Defining the different properties of these beams helped distinguish the identities of these spells, allowing for the team to better adjust effects to provide the correct feedback to our players. <br/><br/>
-      For the purposes of better organization and communication, as many design elements as possible were laid out either in the Game Design Document or on a spreadsheet. This helped our team stay organized and allowed us to better prioritize tasks over the 72-hour period. <br/><br/>
-
-      <div class="proj-img proj-process-item">
-        <img src="img/Unfabled/spellspreadsheet.png" alt="Spreadsheet for spells and element combinations in Unfabled.">
-        <figcaption>Spreadsheet for spells and element combinations in Unfabled.</figcaption>
-      </div>
-      <div class="proj-img proj-process-item">
-        <img src="img/Unfabled/enemyspreadsheet.png" alt="Spreadsheet for enemy properties and layouts in Unfabled.">
-        <figcaption>Spreadsheet for enemy properties and layouts in Unfabled.</figcaption>
-      </div>
-
-      <h2>VFX/Particles Process</h2>
-
-      Early on in the design process, the team decided that particles should be used heavily not only to emphasize the properties of the spells, but also to provide the player with satisfying visual feedback for every spell they cast. <br/><br/>
-      A heavy use of particles also served to dominate screen space and draw the player's attention to the action on screen, keeping them invested in the gameplay loop.
-
-      <div class="proj-img">
-        <img src="img/Unfabled/razorwind.gif" alt="Razor Wind VFX for Unfabled.">
-        <figcaption>Razor Wind VFX for Unfabled. The projectile sprite was used as particle to simulate an afterimage, emphasizing the projectile's speed.</figcaption>
-      </div>
-      <div class="proj-img proj-process">
-        <div class="proj-process-item">
-          <img src="img/Unfabled/bubbletrail.gif" alt="Bubble Trail VFX for Unfabled.">
-          <figcaption>Bubble Trail VFX for Unfabled. Physics were applied to the particles to help support the physics-based bouncing motion of the ball.</figcaption>
+        <div class="proj-img proj-process-item">
+          <img src="img/Unfabled/gameplay2.png" alt="Gameplay image for Unfabled.">
+          <figcaption>Gameplay image for Unfabled.</figcaption>
         </div>
-        <div class="proj-process-item proj-40">
-          <img src="img/Unfabled/bubblebounce.gif" alt="Bubble Bounce VFX for Unfabled.">
-          <figcaption>Bubble Bounce VFX for Unfabled. The change of color from blue to brown helps the particles blend into the ground, providing feedback while not overcluttering the screen.</figcaption>
+
+        <h2>Core Gameplay Design</h2>
+
+        Similar to previous game jams, my team first discussed how to dissect the definition of the word "Unstable" at the beginning of the jam, and how to convey those definitions to a player. We settled on the idea of unstable spell-casting, and converted that idea into the core gameplay identity of Unfabled. <br/><br/>
+        The core gameplay of Unfabled consists of players selecting spells in a short timeframe against oncoming waves of enemies, with the intent of making the character feel powerful through strong visual and auditory feedback. <br/><br/>
+        In order to ensure that I could accurately design for the player experience, I opted to employ a 3C (Character, Controls, Camera) framework to help define what the player should experience from our designs, acting as a razor for the design of our game. <br/><br/>
+
+        <div class="proj-img proj-process-item proj-60">
+          <img src="img/Unfabled/gdd.png" alt="Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.">
+          <figcaption>Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.</figcaption>
         </div>
-      </div>
-      <div class="proj-img">
-        <img src="img/Unfabled/lavaspray.gif" alt="Lava Spray VFX for Unfabled.">
-        <figcaption>Lava Spray VFX for Unfabled. The particles build speed over time to support the slow acceleration of the beam, with the change in particle color signifying distance travelled while resembling sparks burning out.</figcaption>
-      </div>
 
-      <h2>Takeaways</h2>
-      Through the course of this project, I was able to capitalize on my previous experience and act as not only a designer, but a project lead for this game jam. <br/><br/>
-      Working from the top down helped me better understand how design communication can help developers and artists alike on a project, and streamline the production process.
+        <h2>Spells and Enemies</h2>
 
-      <h2>Project Links</h2>
-      <div style="display: flex;">
-        <a href="https://ldjam.com/events/ludum-dare/49/unfabled" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Monkey Mobius"></a>
-        <a href="https://github.com/Kwiper/Unfabled" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for Monkey Mobius"></a>
+        In designing spells and enemies, making sure that everything had unique behaviours and properties was essential to emphasizing the randomness of spellcasting and presenting a lack of order within the game, helping to sell the theme of "Unstable". <br/><br/>
+        For example, Scald and Lava Spray both act as beams that extend from the player's position. <br/><br/>
+        On one hand, Scald is a thinner, faster beam with high knockback, focused on quickly pushing enemies back. On the other hand, Lava Spray is a wider, slower beam that requires a bigger commitment, focused on killing enemies through the spell's high damage. <br/><br/>
+        Defining the different properties of these beams helped distinguish the identities of these spells, allowing for the team to better adjust effects to provide the correct feedback to our players. <br/><br/>
+        For the purposes of better organization and communication, as many design elements as possible were laid out either in the Game Design Document or on a spreadsheet. This helped our team stay organized and allowed us to better prioritize tasks over the 72-hour period. <br/><br/>
+
+        <div class="proj-img proj-process-item">
+          <img src="img/Unfabled/spellspreadsheet.png" alt="Spreadsheet for spells and element combinations in Unfabled.">
+          <figcaption>Spreadsheet for spells and element combinations in Unfabled.</figcaption>
+        </div>
+        <div class="proj-img proj-process-item">
+          <img src="img/Unfabled/enemyspreadsheet.png" alt="Spreadsheet for enemy properties and layouts in Unfabled.">
+          <figcaption>Spreadsheet for enemy properties and layouts in Unfabled.</figcaption>
+        </div>
+
+        <h2>VFX/Particles Process</h2>
+
+        Early on in the design process, the team decided that particles should be used heavily not only to emphasize the properties of the spells, but also to provide the player with satisfying visual feedback for every spell they cast. <br/><br/>
+        A heavy use of particles also served to dominate screen space and draw the player's attention to the action on screen, keeping them invested in the gameplay loop.
+
+        <div class="proj-img">
+          <img src="img/Unfabled/razorwind.gif" alt="Razor Wind VFX for Unfabled.">
+          <figcaption>Razor Wind VFX for Unfabled. The projectile sprite was used as particle to simulate an afterimage, emphasizing the projectile's speed.</figcaption>
+        </div>
+        <div class="proj-img proj-process">
+          <div class="proj-process-item">
+            <img src="img/Unfabled/bubbletrail.gif" alt="Bubble Trail VFX for Unfabled.">
+            <figcaption>Bubble Trail VFX for Unfabled. Physics were applied to the particles to help support the physics-based bouncing motion of the ball.</figcaption>
+          </div>
+          <div class="proj-process-item proj-40">
+            <img src="img/Unfabled/bubblebounce.gif" alt="Bubble Bounce VFX for Unfabled.">
+            <figcaption>Bubble Bounce VFX for Unfabled. The change of color from blue to brown helps the particles blend into the ground, providing feedback while not overcluttering the screen.</figcaption>
+          </div>
+        </div>
+        <div class="proj-img">
+          <img src="img/Unfabled/lavaspray.gif" alt="Lava Spray VFX for Unfabled.">
+          <figcaption>Lava Spray VFX for Unfabled. The particles build speed over time to support the slow acceleration of the beam, with the change in particle color signifying distance travelled while resembling sparks burning out.</figcaption>
+        </div>
+
+        <h2>Takeaways</h2>
+        Through the course of this project, I was able to capitalize on my previous experience and act as not only a designer, but a project lead for this game jam. <br/><br/>
+        Working from the top down helped me better understand how design communication can help developers and artists alike on a project, and streamline the production process.
+
+        <h2>Project Links</h2>
+        <div style="display: flex;">
+          <a href="https://ldjam.com/events/ludum-dare/49/unfabled" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Monkey Mobius"></a>
+          <a href="https://github.com/Kwiper/Unfabled" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for Monkey Mobius"></a>
+        </div>
       </div>
     </section>
   </body>
