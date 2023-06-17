@@ -33,7 +33,7 @@
       <div class="proj">
         <h1 id="proj-title">Tower of Ash</h1>
         <h3 id="proj-cat">Game Design/Development Project</h3>
-        Role: 2D Character Artist/Animator, VFX, Level Designer, Gameplay Designer <br/><br/>
+        Role: 2D Character Artist/Animator, VFX, Gameplay & Level Designer <br/><br/>
         Collaborators:
         <ul>
           <li> Jonathan Newman - Project Lead, Gameplay Designer/Developer, Music </li>
@@ -43,7 +43,7 @@
         Duration: 4 Months (September 2022 - December 2022)<br/><br/>
         Tools Used:
         <ul>
-          <li>Asprite (2D Pixel Art)</li>
+          <li>Aseprite (2D Pixel Art)</li>
           <li>Unity (Development)</li>
           <li>C# (Development)</li>
         </ul>
@@ -56,23 +56,93 @@
         This game was created as part of a university project at Simon Fraser University - IAT 410 Advanced Game Design. Throughout this project, I took on many new roles when compared to other projects, with the main goal of broadening my horizons as a designer, and further understand the asset creation pipeline.
 
         <h2>Character Art and Animation</h2>
-        [WIP] <br/>
+        <h4>The Kindling</h4>
+        One of my main responsibilities was also to design and animate characters and enemies. Starting with the player character, I first took on the role by refining a rough concept of the main character given to me by another group member.<br/><br/>
 
-        Visit the link below to view all the sprites drawn for this project! <br/><br/>
+        When animating the player character’s attacks, I wanted to ensure that attacking provided strong visual feedback for the player. In order to further enforce the game’s themes, I decided to create fiery smears for every attack - bright streaks of flame that will grab the players attention.<br/><br/>
 
-        <a href="./toa-sprites.html" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Tower of Ash Sprites"></a>
+        <div class="proj-img proj-40">
+          <img src="img/ToA/design_prog.png" alt="Progression of the player character, the Kindling’s design.">
+          <figcaption>Progression of the player character, the Kindling’s design. The first two versions were drawn by Matthew, before I refined them into the rightmost and final version.</figcaption>
+        </div>
+
+        <div class="proj-img proj-60">
+          <img src="img/ToA/anim_aseprite.png" alt="Early version of an active keyframe in the Kindling’s Up Aerial attack animation in Aseprite.">
+          <figcaption>Image of an early version of an active keyframe in the Kindling’s Up Aerial attack animation in Aseprite, the team’s pixel art program of choice.</figcaption>
+        </div>
+        <br/>
+        
+        <h4>Enemies</h4>
+
+        Afterwards, I designed and animated the enemies. One major challenge I encountered was having to make each enemy stand out.<br/><br/>
+
+        I stuck to a principle of making sure every enemy had a unique body shape and silhouette, such that players won’t be able to mistake them. I also used a themed color palette based on the environment to ensure that there was thematic homogeneity between the enemies.<br/>
+
+        <div class="proj-img">
+          <img src="img/ToA/enemies.png" alt="Assorted enemy designs for Tower of Ash.">
+          <figcaption>Assorted enemy designs for Tower of Ash. From top to bottom, left to right: Ash Bat, Ashen Belcher, Burnt Vine, Hogash, Lost Ember, Hell Skipper, Satan’s Eye, Small Golem, Phantom, Hollow Robes, and the Black Marble Golem. Most enemies share a similar color palette as well as a yellow “eye” in order to distinguish them.</figcaption>
+        </div>
+        <br/>
+
+        <h4>The Final Boss</h4>
+
+        Finally, there was the boss. As this was the finale to the game, I made their animations as flashy and visually stunning as possible.<br/><br/>
+
+        Different weapons were also used as symbols in attack animations in order to differentiate them and provide clear indicators to players, allowing them to better identify attacks as they come and giving them more time to react.<br/>
+
+        <div class="proj-process">
+          <div class="proj-img proj-process-item" style="width: 30%;">
+            <img src="img/ToA/boss_design.png" alt="Initial design for the final boss.">
+            <figcaption>Initial design for the final boss, with color palette and sample flame to the side.</figcaption>
+            <br/>
+            <img src="img/ToA/boss_pillars.gif" alt="Initial design for the final boss.">
+            <figcaption>The boss's Pillars attack, where the boss crushes a symbolic dagger and causes pillars of blue flame to erupt from beneath the player.</figcaption>
+          </div>
+          <div class="proj-img proj-process-item" style="width: 30%;">
+            <img src="img/ToA/boss_fireball.gif" alt="Initial design for the final boss.">
+            <figcaption>The boss's Fireball attack, which utilizes a glaive to scoop flaming projectiles towards the player.</figcaption>
+            <br/>
+            <img src="img/ToA/boss_final_phase.gif" alt="Boss's Final Phase Attack.">
+            <figcaption>With a whopping 86 frames, this final phase attack was made to look as visually stunning as possible. The boss melds into their weapon, becomes an avatar of blue flame, before reemerging to bring a fiery blade down on the player.</figcaption>
+          </div>
+        </div>
+
+        <!-- Visit the link below to view all the sprites drawn for this project! <br/><br/>
+        <a href="./toa-sprites.html" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Tower of Ash Sprites"></a> -->
 
         <h2>Visual Effects</h2>
-        [WIP]
+        In designing the visual effects, I not only wanted to emphasize the core visual theme of flames, but also provide the player with visually satisfying feedback at every step - whether it is something flashy like performing an attack, or a simple action like jumping and landing.<br/><br/>
 
-        <h2>Gameplay Design</h2>
-        [WIP]
+        Particles were set to the size of a pixel to match the art style, implemented using Unity’s particle engine.<br/><br/>
 
-        <h2>Level Design</h2>
-        [WIP]
+        <div class="proj-vid no-audio">
+          <video width="640" height="360" controls muted>
+            <source src="img/ToA/particle_test.mp4" type="video/mp4" alt="Demo Video sent to the team’s Discord showing Player and Enemy Particles.">
+              Video cannot be played.
+          </video>
+          <figcaption>Demo Video sent to the team’s Discord showing Player and Enemy Particles. Pictured is the Player using their Fireball ability, and the associated particles.</figcaption>
+        </div>
+
+        <h2>Gameplay & Level Design</h2>
+        During pre-production, some of my main responsibilities were to plan enemy interactions, and refine the Embers of Life (depleting health bar) and Oil Flask (health potion) mechanics.<br/><br/>
+
+        For level design, one concept I implemented in the final product was using level geometry to inform progression and indicate possible pathways to the player. Curves and vertical extensions to “floating islands” were added in order to guide the player towards destinations they can’t immediately see. This is important because of the high amount of tension present during moment-to-moment gameplay, largely driven by the Embers of Life mechanic.<br/><br/>
+
+        <div class="proj-img proj-process">
+          <div class="proj-process-item" style="width:30%">
+            <img src="img/ToA/geometry.png" alt="Example of using level geometry to inform players of routes and progression.">
+            <figcaption>Example of using level geometry to inform players of routes and progression.<br/><br/>This image was sent in the team’s Discord server to inform them of the reasoning behind the changes.</figcaption>
+          </div>
+          <div class="proj-process-item proj-60">
+            <img src="img/ToA/oilflask_dt.jpg" alt="Early version of a Decision Tree that charts the possible decision points behind a player choosing to use an Oil Flask.">
+            <figcaption>Early version of a Decision Tree that charts the possible decision points behind a player using an Oil Flask.<br/><br/> The questions at the bottom of the page are missing pieces that helped us better refine this mechanic from this initial stage.</figcaption>
+          </div>
+        </div>
 
         <h2>Takeaways</h2>
-        [WIP] <br/>
+        Through this project, I feel like I have significantly improved my skills in art, animation and VFX - in addition to bolstering my skills in creating satisfying player feedback through visuals.<br/><br/>
+
+        While I wish there was more time during the project to implement more structured design frameworks, one valuable lesson I learned through Tower of Ash is prioritizing which frameworks to use that are most important for communication with other members of the team. This allowed me to further refine my design process over the course of the project - using concepts I had learned in the past as inspiration to create new, innovative solutions for designs.<br/><br/>
 
         You can read more about our processes through our blog linked below!
 

@@ -19,6 +19,14 @@ let uxData = [
 
 let gameData = [
 	{
+		img:"./img/ToA/cover.png", //image
+		title:"Tower of Ash",
+		ctgr:"Game Design/Development Project",
+		content:"A roguelite metroidvania platformer developed in Unity for IAT 410 - Advanced Game Design.", //content
+		tools:"Unity, C#",
+		link:"tower-of-ash",
+	},
+	{
 		img:"./img/Unfabled/cover.png",
 		title:"Unfabled",
 		ctgr:"Game Design/Development Project",
