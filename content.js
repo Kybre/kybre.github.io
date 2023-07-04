@@ -25,7 +25,7 @@ let gameData = [
 //		content:"A platformer centered around a grappling hook, where players must climb the walls of a kitchen to escape their cruel fate of becoming someone else's dinner. [Page WIP]",
 //		tools:"Unity, C#",
 //		link:"",
-	},
+//	},
 	{
 		img:"./img/ToA/cover.png", //image
 		title:"Tower of Ash",
