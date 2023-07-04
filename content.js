@@ -18,6 +18,14 @@ let uxData = [
 ]
 
 let gameData = [
+//	{
+//		img:"./img/GPPE/title.png",
+//		title:"The Great Peking Peak Escape",
+//		ctgr:"Game Design/Development Project",
+//		content:"A platformer centered around a grappling hook, where players must climb the walls of a kitchen to escape their cruel fate of becoming someone else's dinner. [Page WIP]",
+//		tools:"Unity, C#",
+//		link:"",
+	},
 	{
 		img:"./img/ToA/cover.png", //image
 		title:"Tower of Ash",
@@ -38,7 +46,7 @@ let gameData = [
 		img:"./img/MonkeyMobius/title.png",
 		title:"Monkey Mobius",
 		ctgr:"Game Design/Development Project",
-		content:"An infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Participant's Choice award.",
+		content:"An infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Jam via the Participant's Choice award.",
 		tools:"Unity, C#",
 		link:"monkey-mobius",
 	},
@@ -68,13 +76,13 @@ let gameData = [
 	},
 ]
 
-uxData.forEach((data) => {
-	const parent = document.querySelector("#ux");
+gameData.forEach((data) => {
+	const parent = document.querySelector("#game");
 	appendContent(parent, data);
 })
 
-gameData.forEach((data) => {
-	const parent = document.querySelector("#game");
+uxData.forEach((data) => {
+	const parent = document.querySelector("#ux");
 	appendContent(parent, data);
 })
 
