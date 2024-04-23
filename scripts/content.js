@@ -40,7 +40,7 @@ let gameData = [
 		img:"./img/Akimbo/title.png",
 		title:"Akimbo Corps",
 		ctgr:"Game Design / Development Project",
-		content:"Akimbo Corps is a top-down ",
+		content:"In this game, you're responsible for guarding a series of gang safehouses from maniacal, mass-murdering Supercops. Your units all have vision cones, in typical stealth game fashion, so it's up to you to place them in the right spots to catch the intruder, and take him down!",
 		tools:"Unity, C#",
 		link:"akimbo-corps",
 	},
