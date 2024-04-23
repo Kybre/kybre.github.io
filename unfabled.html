@@ -1,124 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<!--Site head-->
-  <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Unfabled</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
-    <title>Unfabled</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
-    <link href="./css/font-style.css" rel="stylesheet">
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-    <script src="./titleAdjust.js"></script>
-  </head>
-  <body>
-    <nav class="sidenav">
-      <ul>
-        <li><a href="/"><img src="img/Icon.png" alt="Page Icon" class="sidebar-icon"></a></li>
-        <li class="text-link"><a href="/#">HOME</a></li>
-        <li class="text-link"><a href="/#ux">UX DESIGN</a></li>
-        <li class="text-link"><a href="/#game">GAME DESIGN</a></li>
-      </ul>
-    </nav>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <section id="main" class="content">
-      <img src="img/Unfabled/gameplay1.png" alt="Gameplay of Unfabled." id="proj-header" class="kmsrt">
-      <div class="proj">
-        <h1 id="proj-title">Unfabled</h1>
-        <h3 id="proj-cat">Game Design/Development Project</h3>
-        Role: Project Lead, Gameplay Designer/Developer, Particle Designer <br/><br/>
-        Collaborators:
-        <ul>
-          <li> Jonathan Newman - Sound/UI Designer, Gameplay Designer/Developer </li>
-          <li> Adrien Pringle - Gameplay Programmer, Particle Designer </li>
-          <li> Taylor Liu - Environment/Effect Artist </li>
-          <li> Stratos Argentius - Character/Effect Artist </li>
-        </ul>
-        Duration: 72 hours (Oct 1st 2021 - Oct 4th 2021)<br/><br/>
-        Tools Used:
-        <ul>
-          <li>Unity (Development)</li>
-          <li>C# (Development)</li>
-        </ul>
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <h2>Project Description</h2>
-        Unfabled is a game created for Ludum Dare 49 under the theme of "Unstable", drawing inspiration by fact-paced actions and Magicka-styled spell slinging. The game went on to place in the top 20% under the Jam event.<br/><br/>
-        In Unfabled, you play as a mad wizard whose horse has been stolen from its stable! Standing between you and your horse is a treacherous forest filled with beasts and guards attempting to stop you in your path. <br/><br/>
-        Throughout this project, my main objective was to take charge of the project with a heavy focus on design elements.
-
-        <div class="proj-img proj-process-item">
-          <img src="img/Unfabled/gameplay2.png" alt="Gameplay image for Unfabled.">
-          <figcaption>Gameplay image for Unfabled.</figcaption>
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/Unfabled/gameplay1.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Unfabled</h1>
+                <h2>Game Design / Development Project</h2>
+            </div>
         </div>
 
-        <h2>Core Gameplay Design</h2>
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#gameplay">Gameplay</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#combat">Combat</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#vfx">VFX</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
 
-        Similar to previous game jams, my team first discussed how to dissect the definition of the word "Unstable" at the beginning of the jam, and how to convey those definitions to a player. We settled on the idea of unstable spell-casting, and converted that idea into the core gameplay identity of Unfabled. <br/><br/>
-        The core gameplay of Unfabled consists of players selecting spells in a short timeframe against oncoming waves of enemies, with the intent of making the character feel powerful through strong visual and auditory feedback. <br/><br/>
-        In order to ensure that I could accurately design for the player experience, I opted to employ a 3C (Character, Controls, Camera) framework to help define what the player should experience from our designs, acting as a razor for the design of our game. <br/><br/>
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#gameplay">Gameplay</a></li><hr>
+                            <li><a class="dropdown-item" href="#combat">Combat</a></li><hr>
+                            <li><a class="dropdown-item" href="#vfx">VFX</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="proj-img proj-process-item proj-60">
-          <img src="img/Unfabled/gdd.png" alt="Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.">
-          <figcaption>Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.</figcaption>
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Project Lead, Gameplay Designer/Developer, VFX Designer</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li>Jonathan Newman - Sound/UI Designer, Gameplay Designer/Developer</li>
+                    <li>Adrien Pringle - Gameplay Programmer, Particle Designer</li>
+                    <li>Taylor Liu - Environment/Effect Artist</li>
+                    <li>Stratos Argentius - Character/Effect Artist</li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Unity (C#)</li>
+                </ul>
+
+                <h5>Duration: 72 hours (Oct 1st 2021 - Oct 4th 2021)</h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                <div id="proj-screenshot-carousel" class="proj-media carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Gameplay Screenshot 1"></button>
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="1" aria-label="Gameplay Screenshot 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/Unfabled/gameplay1.png" class="d-block w-100" alt="Gameplay Screenshot 1 for Unfabled">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Unfabled/gameplay2.png" class="d-block w-100" alt="Gameplay Screenshot 2 for Unfabled">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Unfabled is a game created for Ludum Dare 49 under the theme of "Unstable", drawing inspiration by fact-paced actions and Magicka-styled spell slinging. The game went on to place in the top 20% under the Jam event.
+                </p>
+                <p>
+                    In Unfabled, you play as a mad wizard whose horse has been stolen from its stable! Standing between you and your horse is a treacherous forest filled with beasts and guards attempting to stop you in your path.
+                </p>
+                <p>
+                    Throughout this project, my main objective was to take charge of the project with a heavy focus on design elements.
+                </p>
+            </section>
+
+            <section class="proj-section" id="gameplay">
+                <h2>Gameplay Design</h2>
+                <p>
+                    Similar to previous game jams, my team first discussed how to dissect the definition of the word "Unstable" at the beginning of the jam, and how to convey those definitions to a player. We settled on the idea of unstable spell-casting, and converted that idea into the core gameplay identity of Unfabled.
+                </p>
+                <p>
+                    The core gameplay of Unfabled consists of players selecting spells in a short timeframe against oncoming waves of enemies, with the intent of making the character feel powerful through strong visual and auditory feedback.
+                </p>
+                <p>
+                    In order to ensure that I could accurately design for the player experience, I opted to employ a 3C (Character, Controls, Camera) framework to help define what the player should experience from our designs, acting as a razor for the design of our game.
+                </p>
+
+                <div class="proj-media my-5">
+                    <img src="./img/Unfabled/gdd.png" class="w-100" alt="Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.">
+                    <figcaption>Screenshot showing part of Game Design Document for Unfabled, specifically the 3C section.</figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="combat">
+                <h2>Spells & Enemies</h2>
+                <p>
+                    In designing spells and enemies, making sure that everything had unique behaviours and properties was essential to emphasizing the randomness of spellcasting and presenting a lack of order within the game, helping to sell the theme of "Unstable".
+                </p>
+                <p>
+                    For example, Scald and Lava Spray both act as beams that extend from the player's position. On one hand, Scald is a thinner, faster beam with high knockback, focused on quickly pushing enemies back. On the other hand, Lava Spray is a wider, slower beam that requires a bigger commitment, focused on killing enemies through the spell's high damage.
+                    Defining the different properties of these beams helped distinguish the identities of these spells, allowing for the team to better adjust effects to provide the correct feedback to our players.
+                </p>
+                <p>
+                    For the purposes of better organization and communication, as many design elements as possible were laid out either in the Game Design Document or on a spreadsheet. This helped our team stay organized and allowed us to better prioritize tasks over the 72-hour period.
+                </p>
+
+                <div class="d-flex proj-media-2col">
+                    <div class="proj-media">
+                        <img src="./img/Unfabled/spellspreadsheet.png" class="w-100" alt="Spreadsheet for spells and element combinations in Unfabled.">
+                        <figcaption>Spreadsheet for spells and element combinations in Unfabled.</figcaption>
+                    </div>
+                    <div class="proj-media">
+                        <img src="./img/Unfabled/enemyspreadsheet.png" class="w-100" alt="Spreadsheet for enemy properties and layouts in Unfabled.">
+                        <figcaption>Spreadsheet for enemy properties and layouts in Unfabled.</figcaption>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section" id="vfx">
+                <h2>Visual Effects</h2>
+                <p>
+                    Early on in the design process, the team decided that particles should be used heavily not only to emphasize the properties of the spells, but also to provide the player with satisfying visual feedback for every spell they cast.
+                </p>
+                <p>
+                    A heavy use of particles also served to dominate screen space and draw the player's attention to the action on screen, keeping them invested in the gameplay loop.
+                </p>
+
+                <div class="proj-media mt-5">
+                    <img src="./img/Unfabled/razorwind.gif" class="w-100" alt="Razor Wind VFX for Unfabled.">
+                    <figcaption>
+                        Razor Wind VFX. The projectile sprite was used as particle to simulate an afterimage, emphasizing the projectile's speed.
+                    </figcaption>
+                </div>
+
+                <div class="thin-2col">
+                    <div class="d-flex proj-media proj-media-2col">
+                        <div class="proj-media proj-media-small mx-auto">
+                            <img src="./img/Unfabled/bubbletrail.gif" class="w-100" alt="Bubble Trail VFX for Unfabled.">
+                            <figcaption>
+                                Bubble Trail VFX. Physics were applied to the particles to help support the physics-based bouncing motion of the ball.
+                            </figcaption>
+                        </div>
+                        <div class="proj-media proj-media-small mx-auto">
+                            <img src="./img/Unfabled/bubblebounce.gif" class="w-100" alt="Bubble Bounce VFX for Unfabled.">
+                            <figcaption>
+                                Bubble Bounce VFX. The color fading to brown helps the particles blend into the ground, providing feedback while not overcluttering the screen.
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-media my-5">
+                    <img src="./img/Unfabled/lavaspray.gif" class="w-100" alt="Lava Spray VFX for Unfabled.">
+                    <figcaption>
+                        Lava Spray VFX. The particles build speed over time to support the slow acceleration of the beam, with the change in particle color signifying distance travelled while resembling sparks burning out.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Through the course of this project, I was able to capitalize on my previous experience and act as not only a designer, but a project lead for this game jam. Working from the top down helped me better understand how design communication can help developers and artists alike on a project, and streamline the production process.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://kwiper01.itch.io/unfabled" class="proj-link text-decoration-none me-2">
+                    <img src="./img/icons/newWindow.png" alt="itch.io Link for Unfabled">
+                </a>
+                <a href="https://ldjam.com/events/ludum-dare/49/unfabled" class="proj-link text-decoration-none me-2">
+                    <img src="./img/icons/journalIcon.png" alt="Ludum Dare Page Link for Unfabled">
+                </a>
+                <a href="https://github.com/Kwiper/Unfabled" class="proj-link text-decoration-none me-2">
+                    <img src="./img/icons/githubIconDark.png" alt="GitHub Link for Unfabled">
+                </a>
+            </section>
         </div>
 
-        <h2>Spells and Enemies</h2>
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
 
-        In designing spells and enemies, making sure that everything had unique behaviours and properties was essential to emphasizing the randomness of spellcasting and presenting a lack of order within the game, helping to sell the theme of "Unstable". <br/><br/>
-        For example, Scald and Lava Spray both act as beams that extend from the player's position. <br/><br/>
-        On one hand, Scald is a thinner, faster beam with high knockback, focused on quickly pushing enemies back. On the other hand, Lava Spray is a wider, slower beam that requires a bigger commitment, focused on killing enemies through the spell's high damage. <br/><br/>
-        Defining the different properties of these beams helped distinguish the identities of these spells, allowing for the team to better adjust effects to provide the correct feedback to our players. <br/><br/>
-        For the purposes of better organization and communication, as many design elements as possible were laid out either in the Game Design Document or on a spreadsheet. This helped our team stay organized and allowed us to better prioritize tasks over the 72-hour period. <br/><br/>
-
-        <div class="proj-img proj-process-item">
-          <img src="img/Unfabled/spellspreadsheet.png" alt="Spreadsheet for spells and element combinations in Unfabled.">
-          <figcaption>Spreadsheet for spells and element combinations in Unfabled.</figcaption>
-        </div>
-        <div class="proj-img proj-process-item">
-          <img src="img/Unfabled/enemyspreadsheet.png" alt="Spreadsheet for enemy properties and layouts in Unfabled.">
-          <figcaption>Spreadsheet for enemy properties and layouts in Unfabled.</figcaption>
-        </div>
-
-        <h2>VFX/Particles Process</h2>
-
-        Early on in the design process, the team decided that particles should be used heavily not only to emphasize the properties of the spells, but also to provide the player with satisfying visual feedback for every spell they cast. <br/><br/>
-        A heavy use of particles also served to dominate screen space and draw the player's attention to the action on screen, keeping them invested in the gameplay loop.
-
-        <div class="proj-img">
-          <img src="img/Unfabled/razorwind.gif" alt="Razor Wind VFX for Unfabled.">
-          <figcaption>Razor Wind VFX for Unfabled. The projectile sprite was used as particle to simulate an afterimage, emphasizing the projectile's speed.</figcaption>
-        </div>
-        <div class="proj-img proj-process">
-          <div class="proj-process-item">
-            <img src="img/Unfabled/bubbletrail.gif" alt="Bubble Trail VFX for Unfabled.">
-            <figcaption>Bubble Trail VFX for Unfabled. Physics were applied to the particles to help support the physics-based bouncing motion of the ball.</figcaption>
-          </div>
-          <div class="proj-process-item proj-40">
-            <img src="img/Unfabled/bubblebounce.gif" alt="Bubble Bounce VFX for Unfabled.">
-            <figcaption>Bubble Bounce VFX for Unfabled. The change of color from blue to brown helps the particles blend into the ground, providing feedback while not overcluttering the screen.</figcaption>
-          </div>
-        </div>
-        <div class="proj-img">
-          <img src="img/Unfabled/lavaspray.gif" alt="Lava Spray VFX for Unfabled.">
-          <figcaption>Lava Spray VFX for Unfabled. The particles build speed over time to support the slow acceleration of the beam, with the change in particle color signifying distance travelled while resembling sparks burning out.</figcaption>
-        </div>
-
-        <h2>Takeaways</h2>
-        Through the course of this project, I was able to capitalize on my previous experience and act as not only a designer, but a project lead for this game jam. <br/><br/>
-        Working from the top down helped me better understand how design communication can help developers and artists alike on a project, and streamline the production process.
-
-        <h2>Project Links</h2>
-        <div style="display: flex;">
-          <a href="https://ldjam.com/events/ludum-dare/49/unfabled" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Monkey Mobius"></a>
-          <a href="https://github.com/Kwiper/Unfabled" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for Monkey Mobius"></a>
-        </div>
-      </div>
-    </section>
-  </body>
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

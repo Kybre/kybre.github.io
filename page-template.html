@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Page Template</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
+
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('https://placehold.co/600x400?text=Placeholder+Image');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Title</h1>
+                <h2>Project Type</h2>
+            </div>
+        </div>
+
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: </h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                </ul>
+
+                <h5>Duration: </h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+            </section>
+            
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

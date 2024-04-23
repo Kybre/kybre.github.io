@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Akimbo Corps</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
+
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/Akimbo/title.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Akimbo Corps</h1>
+                <h2>Game Design / Development Project</h2>
+            </div>
+        </div>
+
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#gameplay">Gameplay</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#ui">UI</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#gameplay">Gameplay</a></li><hr>
+                            <li><a class="dropdown-item" href="#ui">UI</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Gameplay Designer/Developer, UI Designer</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li>GGSEvan (Evan Sarkozi) - Project Lead</li>
+                    <li>Xinnoh (Zak Zastera) - Designer / Developer</li>
+                    <li>cubebox51 (Peter) - Developer</li>
+                    <li>Sorceproject (Dave McIntyre) - Narrative & Music</li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Unity (C#, Unity URP)</li>
+                    <li>Figma</li>
+                </ul>
+
+                <h5>Duration: 48 Hours (July 7th 2023 - July 9th 2023)</h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2 class="mb-4">Project Screenshots</h2>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                <div id="proj-screenshot-carousel" class="proj-media carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/Akimbo/gameplay1.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing the Preparation Phase">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/gameplay2.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/gameplay3.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/gameplay4.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Akimbo Corps is a game created for the 2023 GMTK Jam under the theme of "Roles Reversed", where myself and a group of developers from SFU's Game Dev Club decided to attempt an approach to an anti-stealth game. The game went on to place in the top 25% of over 6,000 submissions.
+                </p>
+                <p>
+                    In Akimbo Corps, the player is responsible guarding a series of gang safehouses from maniacal, mass-murdering Supercops. Up to six different types of units with limited vision cones can be placed in order to prevent the four Supercops from reaching their destinations.
+                </p>
+                <p>
+                    My main responsibilities within this project were to design and implement player units and enemies, in addition to creating the main UI elements used throughout the game. My goals for this project were to depart from my usual comfort zone of 2D pixel games and delve into 3D, in addition to designing more complex systems.
+                </p>
+            </section>
+
+            <section class="proj-section" id="gameplay">
+                <h2>Gameplay Design</h2>
+                <h3>Designing Units and Enemies</h3>
+                <p>
+                    Designing units for Akimbo Corps was challenging because we knew going into the design phase that we would be severly limited by the short amount of time we had, mainly due to the amount of work already required for other gameplay systems. As a result, our main focus was on creating a cast of units that all controled space in different ways under the same parameters, in order to simplify development work down the line.
+                </p>
+                <p>
+                    In order to streamline the design process between multiple designers, a spreadsheet with parameters we expected to implement was introduced early on in order to better define each unit's gameplay identity, and to help us balance gameplay to the best of our ability. This also served to help us prioritize designs based on a large variety of factors, such as feasibility, gameplay impact, and more.
+                </p>
+                <div class="proj-media my-4">
+                    <img src="./img/Akimbo/spreadsheet.png" class="w-100" alt="Design spreadsheet for Akimbo Corps showing unit designs with different parameters and properties.">
+                    <figcaption>
+                        Design spreadsheet for Akimbo Corps showing unit designs with different parameters and properties.
+                    </figcaption>
+                </div>
+
+                <h3>Player Units</h3>
+                <p>
+                    From the design spreadsheet, I was able to quickly implement units and make adjustments as needed, thanks to Evan's speedy programming. I began by making a sample prefab of Mickey Mook, which then served as a base for other units to be built on top of. Prefabbing the units this way allowed them to be created as seperate instances of objects for unit placement.
+                </p>
+                <div class="proj-media my-4">
+                    <img src="./img/Akimbo/prefab.png" class="w-100" alt="Development screenshot showing the Unit Base prefab.">
+                    <figcaption>
+                        Development screenshot showing the Unit Base prefab.
+                    </figcaption>
+                </div>
+
+                <h3>Enemy Pathing AI</h3>
+                <p>
+                    One of my main contributions during developement was the implementation of automatic pathing for enemy units. The pathing system utilizes a NavMesh package that determines the walkable surfaces within the level's layout, with pre-defined checkpoints that the enemy has to pass through in order to increment through the list of checkpoints for that given level.
+                </p>
+                <div class="proj-media mb-5">
+                    <video height="auto" controls muted>
+                        <source src="img/Akimbo/gameplay-demo.mp4" type="video/mp4" alt="Demo video showing early gameplay, namely unit placement, fog of war, enemy pathing, and implemented UI.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        Demo video showing early gameplay, namely unit placement, fog of war, enemy pathing, and implemented UI.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="ui">
+                <h2>UI Design</h2>
+                <p>
+                    As Hotline Miami was one of our main inspirations for this game, I wanted to utilize similarly bright colors, whilst emulating the brand of humor we were aiming for through taking inspiration from 80s VHS Displays. The main goal of the UI was to be simple yet clear, since we knew that a short game of this scope would likely not have a fully drawn-out tutorial sequence.
+                </p>
+                <p>
+                    Another point of consideration was that the UI had to also cohesive with the game's narrative. This led to the decision to utilize a file with profile images for unit selection, as the player was essentially acting as a manager or boss to these lackeys in defense of their homes of operation.
+                </p>
+
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                <div id="ui-carousel" class="proj-media carousel slide carousel-fade mt-4">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ui-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Prep Phase Mockup"></button>
+                        <button type="button" data-bs-target="#ui-carousel" data-bs-slide-to="1" aria-label="Action Phase Mockup"></button>
+                        <button type="button" data-bs-target="#ui-carousel" data-bs-slide-to="2" aria-label="Win Screen Mockup"></button>
+                        <button type="button" data-bs-target="#ui-carousel" data-bs-slide-to="3" aria-label="Loss Screen Mockup"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/Akimbo/ui-prep.png" class="d-block w-100" alt="Preperation Phase UI Mockup for Akimbo Corps">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="mb-0">Preperation Phase UI Mockup</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/ui-action.png" class="d-block w-100" alt="Action Phase UI Mockup for Akimbo Corps">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="mb-0">Action Phase UI Mockup</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/ui-win.png" class="d-block w-100" alt="Win Screen UI Mockup for Akimbo Corps">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="mb-0">Win Screen UI Mockup</p>        
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Akimbo/ui-loss.png" class="d-block w-100" alt="Loss Screen UI Mockup for Akimbo Corps">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="mb-0">Loss Screen UI Mockup</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ui-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ui-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Through this project, I was able to push myself out of my comfort zone when it came to game design, exploring new territory with mechanics such as fog of war, AI pathing and in-depth AI targeting / shooting, among many others. I was also able to bring in better organizational skills and frameworks to streamline the development process for this project, despite a heavily reduced scope due to the time constraints of a game jam. 
+                </p>
+                <p>
+                    Overall, I belive this project helped me discover many new tools that I can use in my game design arsenal, as well as further refining the processes and skills I already had.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://ggsevan.itch.io/akimbo-corps" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/newWindow.png" alt="itch.io Link for Akimbo Corps">
+                </a>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

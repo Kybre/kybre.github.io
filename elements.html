@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Style Guide</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head> 
+
+    <body>
+        <header>
+            <!-- HEADER -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
+
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1 class="display-1">Portfolio Style Guide</h1>
+            <section id="interactive-elements">
+                <h2><u>INTERACTIVE ELEMENTS</u></h2>
+
+                <section class="element">
+                    <h3>In-text Link</h3>
+                    <p><a class="text-link" href="#">This</a> is an in-text link.</p>
+                </section>
+
+                <section class="element">
+                    <h3>Navigation Links</h3>
+                    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+                        <div class="container-fluid">       
+                            <!-- Hamburger Button -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavItems">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+        
+                            <!-- Nav Items -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavItems">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav A</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav B</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav C</a>
+                                    </li>
+                                </ul>
+                              </div>
+                        </div>
+                    </nav>
+                </section>
+
+                <section class="element">
+                    <h3>Submit/Reset/Text Buttons</h3>
+                    <!--https://www.w3schools.com/tags/att_input_type_reset.asp-->
+                    <form>
+                        <input class="btn btn-secondary" type="reset" value="Reset">
+                        <input class="btn btn-secondary" type="Submit" value="Submit">
+                        <a href="#" class="btn btn-secondary text-decoration-none" role="button">Text Button</a>
+                    </form>
+                </section>
+            
+                <section class="element">
+                    <h3>Sample Hyperlinked Image with Figcaption</h3>
+                    <div class="proj-media">
+                        <a href="#">
+                            <img src="https://placehold.co/600x400?text=Placeholder+Image" class="w-100" alt="Test Image">
+                            <figcaption>Image obtained from: https://placehold.co/</figcaption>
+                        </a>
+                    </div>
+                    <!--Image obtained from: https://placehold.co/-->
+                </section>
+
+                <section class="element">
+                    <h3>Sample Video</h3>
+                    <div class="proj-media">
+                        <video height="auto" controls muted>
+                            <source src="./img/MonkeyMobius/portal.mp4" type="video/mp4" alt="Sample video">
+                              Video cannot be played.
+                        </video>
+                        <figcaption>
+                            Sample video figcaption.
+                        </figcaption>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Sample Audio</h3>
+                    <div class="proj-media">
+                        <audio controls class="mt-2">
+                            <source src="./audio/ShootFX.mp3" type="audio/mp3"> Audio isn't supported on this browser.
+                        </audio>
+                        <figcaption>Sample audio figcaption.</figcaption>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Image Carousel</h3>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                    <div id="sample-carousel" class="proj-media carousel carousel-dark slide carousel-fade mt-4">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#sample-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#sample-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/600x400?text=Sample+Slide+1" class="d-block w-100 mx-auto" alt="Sample slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/600x400?text=Sample+Slide+2" class="d-block w-100 mx-auto" alt="Sample slide 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="mb-0">
+                                        This is an image with a sample caption.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sample-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sample-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </section>
+
+            <section id="colors" class="element">
+                <h2><u>COLORS</u></h2>
+                <h3 style="background-color: #202020; color: #FAFAFA">Primary Color - #202020</h3>
+                <h3 style="background-color: #606060; color: #FAFAFA">Secondary Color - #606060</h3>
+                <h3>Background Color - #FAFAFA</h3>
+            </section>
+
+            <section id="text-elements" class="element">
+                <h2><u>TEXT STYLING</u></h2>
+
+                <section class="element">
+                    <h3>Headings</h3>
+                    <h1 class="display-1">Display h1 - Playball (8rem)</h1>
+                    <h2 class="display-2">Display h2 - Playball (4.5rem)</h2>
+                    <h3 class="display-3">Display h3 - Playball (4rem)</h3>
+                    <h4 class="display-4">Display h4 - Playball (3.5rem)</h4>
+                    <h5 class="display-5">Display h5 - Playball (3rem)</h5>
+                    <h5 class="display-6">Display h6 - Playball (2.5rem)</h5>
+                    <br>
+                    <h1>Bootstrap h1 - Red Hat Display (2.5rem)</h1>
+                    <h2>Bootstrap h2 - Red Hat Display (2rem)</h2>
+                    <h3>Bootstrap h3 - Red Hat Display (1.75rem)</h3>
+                    <h4>Bootstrap h4 - Red Hat Display (1.5rem)</h4>
+                    <h5>Bootstrap h5 - Red Hat Display (1.25rem)</h5>
+                    <br>
+                    <h5>Logo Font - Freestyle Script</h5>
+                </section>
+            
+                <section class="element">
+                    <h3>Paragraphs</h3>
+                    <p class="bold">This is a short, bold paragraph. Lato (1rem 700)</p>
+                    <p>This is a long paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus consequat vestibulum. Nulla orci est, aliquam rutrum tincidunt quis, pretium nec leo. Sed sit amet nibh sed eros dictum aliquam ut vitae ipsum. Nam est elit, consectetur sed placerat ac, aliquet quis ex. Aliquam erat volutpat. Nam porttitor nulla eu risus viverra tempus. Mauris lacinia porttitor dapibus. Vestibulum auctor finibus eros, ut rhoncus ligula viverra at. Aliquam ac vehicula elit. Mauris quis scelerisque dui, venenatis commodo neque. Donec enim nisl, condimentum et purus in, ultricies placerat turpis. <br> Lato 300 (1rem)</p>
+                </section>
+            
+                <section class="element">
+                    <h3>Ordered List</h3>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>           
+                </section>
+
+                <section class="element">
+                    <h3>Unordered List</h3>
+                    <ul>
+                        <li>Item A</li>
+                        <li>Item B</li>
+                        <li>Item C</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="colors" class="element">
+                <h2><u>COMBINED ELEMENTS</u></h2>
+
+                <section class="element">
+                    <h3>Main Navigation</h3>
+                    <header>
+                        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                            <div class="container-fluid">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                                </a>
+            
+                                <!-- Hamburger Button -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleSampleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+            
+                                <!-- Nav Items -->
+                                <div class="collapse navbar-collapse" id="collapsibleSampleNavbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#bio">About</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Projects
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                                <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#cv">Resume</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>
+                </section>
+
+                <section class="element">
+                    <h3>Footer</h3>
+
+                    <footer class="container-fluid d-flex bg-primary">
+                        <div class="container w-20">
+                            <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                            <div class="socials">
+                                <a href="mailto:kybre.work@gmail.com">
+                                    <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                                </a>
+                                <a href="tel:+17789177385">
+                                    <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                                </a>
+                                <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                                    <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                                </a>
+                                <a href="https://github.com/Kybre">
+                                    <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="container w-80">
+                            <ul>
+                                <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                                <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                                <hr>
+                                <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                                <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                                <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                                <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </section>
+
+                <section class="element">
+                    <h3>Project Banners</h3>
+
+                    <div class="item">
+                        <a href="#" class="item-content">
+                            <img src="https://placehold.co/600x400?text=Placeholder+Image">
+                            <div class="item-desc">
+                                <h2>Project Title</h2>
+                                <h5 class="fst-italic">Project Category</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus consequat vestibulum. Nulla orci est, aliquam rutrum tincidunt quis, pretium nec leo. Sed sit amet nibh sed eros dictum aliquam ut vitae ipsum. Nam est elit, consectetur sed placerat ac, aliquet quis ex.
+                                <p class="fst-italic">Project Tools</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="element">
+                <h3>Project Sub-Navigation</h3>
+                <nav class="sub-nav navbar d-flex justify-content-center navbar-expand-sm navbar-dark bg-dark">
+                    <div class="sub-nav-desktop">
+                        <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                            <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#shooting-mechanics">Shooting</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#enemy-ai">AI</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#graphics">Graphics</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#ui">UI</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                            <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="sub-nav-mobile w-50">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sections
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                                    <li><a class="dropdown-item" href="#shooting-mechanics">Shooting</a></li><hr>
+                                    <li><a class="dropdown-item" href="#enemy-ai">AI</a></li><hr>
+                                    <li><a class="dropdown-item" href="#graphics">Graphics</a></li><hr>
+                                    <li><a class="dropdown-item" href="#ui">UI</a></li><hr>
+                                    <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                                    <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="citations" class="element">
+                <h2>Citations</h2>
+                <ul>
+                    <li>Chan, Herman. <i>Herman Chan's Portfolio,</i> 2022, kybre.github.io/.</li>
+                    <li>Otto, Mark. “Bootstrap Docs.” Bootstrap v5.3, getbootstrap.com/docs/5.3/getting-started/introduction/. Accessed 17 Apr. 2024.</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

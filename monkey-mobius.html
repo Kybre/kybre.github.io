@@ -1,99 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<!--Site head-->
-  <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Monkey Mobius</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
-    <title>Monkey Mobius</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
-    <link href="./css/font-style.css" rel="stylesheet">
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-    <script src="./titleAdjust.js"></script>
-  </head>
-  <body>
-    <nav class="sidenav">
-      <ul>
-        <li><a href="/"><img src="img/Icon.png" alt="Page Icon" class="sidebar-icon"></a></li>
-        <li class="text-link"><a href="/#">HOME</a></li>
-        <li class="text-link"><a href="/#game">GAMES</a></li>
-        <li class="text-link"><a href="/#ux">UX</a></li>
-      </ul>
-    </nav>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <section id="main" class="content">
-      <img src="img/MonkeyMobius/gameplay1.png" alt="Gameplay of Monkey Mobius." id="proj-header" class="kmsrt">
-      <div class="proj">
-        <h1 id="proj-title">Monkey Mobius</h1>
-        <h3 id="proj-cat">Game Design/Development Project</h3>
-        Role: Level Designer, Gameplay Designer <br/><br/>
-        Collaborators:
-        <ul>
-          <li> Ed Martin Habab - Programmer, 2D Animator </li>
-          <li> Benedict Wong - Programmer </li>
-          <li> John Vincent Yaris - Programmer </li>
-          <li> Matthew Armstrong - Music, Sound Effects </li>
-        </ul>
-        Duration: 48 hours (Sept 17th 2021 - Sept 19th 2021)<br/><br/>
-        Tools Used:
-        <ul>
-          <li>Unity (Development)</li>
-          <li>C# (Development)</li>
-        </ul>
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <h2>Project Description</h2>
-        Monkey Mobius is a game created for the 2021 BC Game Jam under the theme of "Infinite", inspired by mind-bending, space-defying puzzle games. The game went on to win the Participant's Choice award for the event.<br/><br/>
-        In the game, you play as Caesar the Monkey, who has to traverse an endless tropical maze in his quest to reach the Banana Temple and deliver sacrificial bananas to the Banana Overlord. <br/><br/>
-        Throughout this project, my main objective was to take the learnings of previous game jams and through that, consolidate my design processes.
-
-        <h2>Gameplay Design Process</h2>
-
-        At the beginning of the jam, me and my team discussed how to dissect the definition of the word "Infinite", and how to convey those definitions to a player. From there, we decided to convert our interpretation of the theme into the core mechanic of infinite space. <br/><br/>
-        In order to create the illusion of an infinite space, portals were used to seamlessly transport the player from one side of the map to another, with duplicate level and box visuals to help sell the illusion. In addition, I opted to use a seamless transition between levels to make the levels feel like one interconnected space, even as the player went from one level to the next. <br/><br/>
-
-        <div class="no-audio">
-          <video width="640" height="360" controls muted>
-            <source src="img/MonkeyMobius/portal.mp4" type="video/mp4" alt="Development video demonstrating the portals seamlessly transporting the player from one end of the map to another.">
-              Video cannot be played.
-          </video>
-          <figcaption>(Development video demonstrating the portals seamlessly transporting the player from one end of the map to another.)</figcaption>
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/MonkeyMobius/gameplay1.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Monkey Mobius</h1>
+                <h2>Game Design/Development Project</h2>
+            </div>
         </div>
 
-        <h2>Level Design Process</h2>
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#gameplay">Gameplay</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#level">Level</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
 
-        My main approach with the level design for this game was to take the player's established concept of space, and turn that understanding on its head as the player progressed through the levels. As a result of this, levels were designed such that spaces and level elements were added on top of each other as part of a growing space, where the end of one level was the start of another. <br/><br/>
-        In light of the space-bending concept of the game, levels were also designed such that the player would understand where they need to go, framing the journey between start and finish as the main challenge.
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#gameplay">Gameplay</a></li><hr>
+                            <li><a class="dropdown-item" href="#level">Level</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="proj-img proj-process">
-          <div class="proj-process-item">
-            <img src="img/MonkeyMobius/sketch1.jpg" alt="Sketches of level 7 and 8.">
-            <figcaption>Sketches of level 7 and 8.</figcaption>
-          </div>
-          <div class="proj-process-item proj-60">
-            <img src="img/MonkeyMobius/level7.png" alt="Final design of level 7 with duplicated visuals.">
-            <figcaption>Final design of level 7 with duplicated visuals.</figcaption>
-            <br/>
-            <img src="img/MonkeyMobius/level8.png" alt="Final design of level 8 with duplicated visuals.">
-            <figcaption>Final design of level 8 with duplicated visuals.</figcaption>
-          </div>
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Gameplay / Level Designer</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li> Ed Martin Habab - Programmer, 2D Animator </li>
+                    <li> Benedict Wong - Programmer </li>
+                    <li> John Vincent Yaris - Programmer </li>
+                    <li> Matthew Armstrong - Music, Sound Effects </li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Unity (C#)</li>
+                </ul>
+
+                <h5>Duration: 48 hours (Sept 17th 2021 - Sept 19th 2021)</h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+                <div class="proj-media">
+                    <img src="./img/MonkeyMobius/gameplay1.png" class="w-100" alt="Gameplay Screenshot of Monkey Mobius">
+                    <figcaption>Gameplay screenshot of Monkey Mobius.</figcaption>
+                </div>
+            </section>
+            
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Monkey Mobius is a game created for the 2021 BC Game Jam under the theme of "Infinite", inspired by mind-bending, space-defying puzzle games. The game went on to win the Participant's Choice award for the event. In the game, you play as Caesar the Monkey, who has to traverse an endless tropical maze in his quest to reach the Banana Temple and deliver sacrificial bananas to the Banana Overlord.
+                </p>
+                <p>
+                    Throughout this project, my main objective was to take the learnings of previous game jams and through that, consolidate my design processes.
+                </p>
+            </section>
+
+            <section class="proj-section" id="gameplay">
+                <h2>Gameplay Design</h2>
+                <p>
+                    At the beginning of the jam, me and my team discussed how to dissect the definition of the word "Infinite", and how to convey those definitions to a player. From there, we decided to convert our interpretation of the theme into the core mechanic of infinite space.
+                </p>
+                <p>
+                    In order to create the illusion of an infinite space, portals were used to seamlessly transport the player from one side of the map to another, with duplicate level and box visuals to help sell the illusion. In addition, I opted to use a seamless transition between levels to make the levels feel like one interconnected space, even as the player went from one level to the next.
+                </p>
+                <div class="proj-media">
+                    <video height="auto" controls muted>
+                        <source src="./img/MonkeyMobius/portal.mp4" type="video/mp4" alt="Development video demonstrating the portals seamlessly transporting the player from one end of the map to another.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        Development video demonstrating the portals seamlessly transporting the player from one end of the map to another.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="level">
+                <h2>Level Design</h2>
+                <p>
+                    My main approach with the level design for this game was to take the player's established concept of space, and turn that understanding on its head as the player progressed through the levels. As a result of this, levels were designed such that spaces and level elements were added on top of each other as part of a growing space, where the end of one level was the start of another.
+                </p>
+                <p>
+                    In light of the space-bending concept of the game, levels were also designed such that the player would understand where they need to go, framing the journey between start and finish as the main challenge.
+                </p>
+                <div class="d-flex proj-media-2col mt-4">
+                    <div class="proj-media">
+                        <img src="./img/MonkeyMobius/sketch1.jpg" class="w-100" alt="Sketches of level 7 and 8 for Monkey Mobius.">
+                        <figcaption>Sketches of level 7 and 8.</figcaption>
+                    </div>
+
+                    <div>
+                        <div class="proj-media mb-5">
+                            <img src="img/MonkeyMobius/level7.png" class="w-100" alt="Final design of level 7 for Monkey Mobius with duplicated visuals.">
+                            <figcaption>Final design of level 7 with duplicated visuals.</figcaption>
+                        </div>
+                        <div class="proj-media">
+                            <img src="img/MonkeyMobius/level8.png" class="w-100" alt="Final design of level 8 for Monkey Mobius with duplicated visuals.">
+                            <figcaption>Final design of level 8 with duplicated visuals.</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Through the course of this project, I was able to reflect on the shortcomings in previous game jams and streamline my design process, which resulted in the success of winning the Participant's Choice award in the event.
+                </p>
+                <p>
+                    Being able to test my skills in gameplay and level design when space is not as it seems was also a very valuable experience. In addition to a better understanding of working around spatial limitations, I also learned more about how the player's experience can be controlled through the presentation of gameplay.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://jyunaut.itch.io/monkey-mobius" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/newWindow.png" alt="itch.io Link for Monkey Mobius">
+                </a>
+                <a href="https://github.com/Jyunaut/Monkey-D-Nuts" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/githubIconDark.png" alt="GitHub Link for Monkey Mobius">
+                </a>
+            </section>
         </div>
 
-        <h2>Takeaways</h2>
-        Through the course of this project, I was able to reflect on the shortcomings in previous game jams and streamline my design process, which resulted in the success of winning the Participant's Choice award in the event. <br/><br/>
-        Being able to test my skills in gameplay and level design when space is not as it seems was also a very valuable experience. In addition to a better understanding of working around spatial limitations, I also learned more about how the player's experience can be controlled through the presentation of gameplay.
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
 
-        <h2>Project Links</h2>
-        <div style="display: flex;">
-          <a href="https://jyunaut.itch.io/monkey-mobius" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Monkey Mobius"></a>
-          <a href="https://github.com/Jyunaut/Monkey-D-Nuts" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for Monkey Mobius"></a>
-        </div>
-      </div>
-    </section>
-  </body>
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

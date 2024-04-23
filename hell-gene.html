@@ -1,112 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<!--Site head-->
-  <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Hell Gene</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
-    <title>Hell Gene</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
-    <link href="./css/font-style.css" rel="stylesheet">
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-    <script src="./titleAdjust.js"></script>
-  </head>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-  <body>
-    <!--Sidebar-->
-    <nav class="sidenav">
-      <ul>
-        <li><a href="/"><img src="img/Icon.png" alt="Page Icon" class="sidebar-icon"></a></li>
-        <li class="text-link"><a href="/#">HOME</a></li>
-        <li class="text-link"><a href="/#game">GAMES</a></li>
-        <li class="text-link"><a href="/#ux">UX</a></li>
-      </ul>
-    </nav>
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <section id="main" class="content">
-      <img src="img/HellGene/gameplay1.png" alt="Image of Hell Gene gameplay" id="proj-header">
-      <div class="proj">
-        <h1 id="proj-title">Hell Gene</h1>
-        <h3 id="proj-cat">Game Design/Development Project</h3>
-        Role: Gameplay Designer, Programmer, Animator, UI Designer, VFX <br/><br/>
-        Collaborators:
-        <ul>
-          <li> Jonathan Newman - Lead Sound Designer, Programmer </li>
-          <li> Alyssa Marie Umbal - Lead Artist</li>
-          <li> Benedict Wong - Gameplay Designer, Programmer </li>
-          <li> Nathan Cerone - Project Manager, Level Designer, Programmer </li>
-          <li> Stratos Argentius - Gameplay Designer, Artist, Animator </li>
-        </ul>
-        Duration: 7 days (August 22nd 2021 - August 29th 2021) <br/><br/>
-        Tools Used:
-        <ul>
-          <li>Unity (Development)</li>
-          <li>C# (Development)</li>
-        </ul>
-
-        <h2>Project Description</h2>
-        Hell Gene is a roguelike hack and slash game created for Brackey's Game Jam 2021.2, with the main theme being "Let There Be Chaos". <br/> <br/>
-        In Hell Gene, you play as Eugene Martez, a descendant of the Demon King on a quest to reject his heritage. In the process, he takes up different weapons to try and escape through the ever-changing rooms of Hell. <br/> <br/>
-        Featuring procedurally generated level generation and a combat system with a large variety of weapons, Hell Gene was a great technical learning experience. <br/>
-
-        <h2>Gameplay Design Process</h2>
-
-        In designing gameplay, the team first broke down the term "chaos" and how we could present the feeling of chaos to a player. From there, we decided to focus on irregularity as a core gameplay element, which led to the decision to include procedural generation.<br/><br/>
-        In addition, we opted to visually clutter the screen in order to present a lack of order to the player. In interpreting the phrase "let there be", we also decided to give the player control over the chaos by allowing them to choose between more power or an easier stage. <br/><br/>
-
-        <div class="proj-img">
-          <img src="img/HellGene/gameplay2.png" alt="Gameplay screenshot of Hell Gene.">
-          <figcaption>Gameplay screenshot of Hell Gene.</figcaption>
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/HellGene/gameplay1.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Hell Gene</h1>
+                <h2>Game Design/Development Project</h2>
+            </div>
         </div>
 
-        <h2>VFX, Animation and UI</h2>
-        Adhering to the theme of chaos, many of my animations were made to be big and fast, in order to occupy the screen with movement. Particles were also used heavily in order to further display a lack of order and take up screen space, further conveying the chaotic feel of the game. <br/> <br/>
-        In light of the visual direction of the game, the main focus in designing the UI was to convey the most important information to the player as effectively as possible due the constant movement elsewhere in the game. <br/> <br/>
-        I ended up deciding on Health, Chaos Level, Equipped Weapons and Weapon Durability as the most important to convey due to these variables' high impact on gameplay.
-        <div class="proj-img">
-          <img src="img/HellGene/Laser.gif" alt="Laser VFX for Hell Gene.">
-          <figcaption>Laser VFX for Hell Gene. I also drew the base of the laser the VFX is laid on top of!</figcaption>
-        </div>
-        <div class="proj-img proj-process">
-          <div class="proj-process-item proj-40">
-            <img src="img/HellGene/FrontAttack.gif" alt="Front-facing attack animation." class="bg-dark">
-            <figcaption>Front-facing attack animation. The most challenging part of this animation was getting the motion of the cape right.</figcaption>
-          </div>
-          <div class="proj-process-item proj-40">
-            <img src="img/HellGene/Slash.gif" alt="Animated effect for sword slashes." class="bg-dark">
-            <figcaption>Animated effect for sword slashes. The frames were drawn to match the attack animation.</figcaption>
-          </div>
-        </div>
-        <div class="proj-img proj-process proj-process-item proj-40">
-          <img src="img/HellGene/ItemFrame.png" alt="UI Item Frame for Hell Gene." class="bg-dark">
-          <figcaption>UI Item Frame for Hell Gene. The image of the current held item is displayed in the semi-transparent black box, while the respective weapon's durability is indicated by the thin vertical bar on the right.</figcaption>
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#gameplay">Gameplay</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#graphics">Graphics & VFX</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#dev">Development</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#gameplay">Gameplay</a></li><hr>
+                            <li><a class="dropdown-item" href="#graphics">Graphics & VFX</a></li><hr>
+                            <li><a class="dropdown-item" href="#dev">Development</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Gameplay Designer / Developer, Character Animator, UI / VFX Designer</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li> Jonathan Newman - Lead Sound Designer, Programmer </li>
+                    <li> Alyssa Marie Umbal - Lead Artist</li>
+                    <li> Benedict Wong - Gameplay Designer, Programmer </li>
+                    <li> Nathan Cerone - Project Manager, Level Designer, Programmer </li>
+                    <li> Stratos Argentius - Gameplay Designer, Artist, Animator </li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Unity (C#)</li>
+                    <li>Aseprite</li>
+                </ul>
+
+                <h5>Duration: 7 days (August 22nd 2021 - August 29th 2021)</h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                <div id="proj-screenshot-carousel" class="proj-media carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Gameplay Screenshot 1"></button>
+                        <button type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide-to="1" aria-label="Gameplay Screenshot 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/HellGene/gameplay1.png" class="d-block w-100" alt="Gameplay Screenshot 1 for Hell Gene">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/HellGene/gameplay2.png" class="d-block w-100" alt="Gameplay Screenshot 2 for Hell Gene">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#proj-screenshot-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Hell Gene is a roguelike hack and slash game created for Brackey's Game Jam 2021.2, with the main theme being "Let There Be Chaos". In Hell Gene, you play as Eugene Martez, a descendant of the Demon King on a quest to reject his heritage. In the process, he takes up different weapons to try and escape through the ever-changing rooms of Hell. 
+                </p>
+                <p>
+                    Featuring procedurally generated level generation and a combat system with a large variety of weapons, Hell Gene was a great technical learning experience.
+                </p>
+            </section>
+
+            <section class="proj-section" id="gameplay">
+                <h2>Gameplay Design</h2>
+                <p>
+                    In designing gameplay, the team first broke down the term "chaos" and how we could present the feeling of chaos to a player. From there, we decided to focus on irregularity as a core gameplay element, which led to the decision to include procedural generation.
+                </p>
+                <p>
+                    In addition, we opted to visually clutter the screen in order to present a lack of order to the player. In interpreting the phrase "let there be", we also decided to give the player control over the chaos by allowing them to choose between more power or an easier stage.
+                </p>
+                <div class="proj-media my-4">
+                    <img src="./img/HellGene/gameplay2.png" class="w-100" alt="Gameplay screenshot of Hell Gene.">
+                    <figcaption>Gameplay screenshot of Hell Gene.</figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="graphics">
+                <h2>Graphics & Visuals</h2>
+                <p>
+                    Adhering to the theme of chaos, many of my animations were made to be big and fast, in order to occupy the screen with movement. Particles were also used heavily in order to further display a lack of order and take up screen space, further conveying the chaotic feel of the game.
+                </p>
+                <p>
+                    In light of the visual direction of the game, the main focus in designing the UI was to convey the most important information to the player as effectively as possible due the constant movement elsewhere in the game. I ended up deciding on Health, Chaos Level, Equipped Weapons and Weapon Durability as the most important to convey due to these variables' high impact on gameplay.
+                </p>
+
+                <div class="proj-media mt-5">
+                    <img src="./img/HellGene/Laser.gif" class="w-100" alt="Laser VFX for Hell Gene.">
+                    <figcaption>Laser VFX for Hell Gene. The base of the laser was created in Aseprite to match the pixel-y nature of the VFX.</figcaption>
+                </div>
+
+                <div class="thin-2col">
+                    <div class="d-flex proj-media proj-media-2col">
+                        <div class="proj-media">
+                            <img src="./img/HellGene/Slash.gif" class="w-100" alt="Animated effect for sword slashes.">
+                            <figcaption>
+                                Animated effect for sword slashes. The frames were drawn to match the attack animation.
+                            </figcaption>
+                        </div>
+                        <div class="proj-media">
+                            <img src="./img/HellGene/FrontAttack.gif" class="w-100" alt="Front-facing attack animation.">
+                            <figcaption>
+                                Front-facing attack animation. The most challenging part of this animation was getting the motion of the cape right.
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-media my-5">
+                    <img src="./img/HellGene/ItemFrame.png" alt="UI Item Frame for Hell Gene.">
+                    <figcaption>
+                        UI Item Frame for Hell Gene. The image of the current held item is displayed in the semi-transparent black box, while the respective weapon's durability is indicated by the thin vertical bar on the right.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="dev">
+                <h2>Development</h2>
+                <p>
+                    During development, I was in charge of programming the procedural generation system for levels, ranged weapon and projectile behaviours, as well as parts of item spawning.
+                </p>
+                <p>
+                    One main challenge of the development of Hell Gene was the breadth of tasks I undertook in addition to the above programming, however I believe that proper time management and clear directives allowed me to accomplish a large variety of tasks during the game jam.
+                </p>
+
+                <div class="proj-media my-5">
+                    <img src="/.img/HellGene/code.png" class="w-100" alt="Sample code image from Hell Gene.">
+                    <figcaption>
+                        Sample code image from Hell Gene, showing a switch-case containing some different ranged attack options and their start-up properties.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Through this project, I was able to learn a lot of technical skills in Unity, from procedural generation to particle systems. One of the bigger challenges, however, was trying to take on too many different roles at once during the course of this project, which I feel may have led to quite a few rushed areas. Despite that, we managed to finish in the top third of a game jam with over 1700 entries.
+                </p>
+                <p>
+                    I want to not only continue working on the skills I've developed over the course of the game jam, but to take the lessons learned and apply them to my work moving forward.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://kwiper01.itch.io/hell-gene" class="proj-link text-decoration-none me-2">
+                    <img src="./img/icons/newWindow.png" alt="itch.io Link for Hell Gene">
+                </a>
+                <a href="https://github.com/benedict-wong/Hell-Gene" class="proj-link text-decoration-none me-2">
+                    <img src="./img/icons/githubIconDark.png" alt="GitHub Link for Hell Gene">
+                </a>
+            </section>
         </div>
 
-        <h2 style="margin-bottom: 0;">Development</h2>
-        During development, I was in charge of programming the procedural generation system for levels, ranged weapon and projectile behaviours, as well as parts of item spawning. <br/><br/>
-        One main challenge of the development of Hell Gene was the breadth of tasks I undertook in addition to the above programming, however I believe that proper time management and clear directives allowed me to accomplish a large variety of tasks during the game jam.
-        <div class="proj-img">
-          <img src="img/HellGene/code.png" alt="Sample code image from Hell Gene.">
-          <figcaption>Sample code image from Hell Gene, showing a switch-case containing some different ranged attack options and their start-up properties.</figcaption>
-        </div>
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
 
-        <h2>Takeaways</h2>
-        Through this project, I was able to learn a lot of technical skills in Unity, from procedural generation to particle systems. One of the bigger challenges, however, was trying to take on too many different roles at once during the course of this project, which I feel may have led to quite a few rushed areas. Despite that, we managed to finish in the top third of a game jam with over 1700 entries. <br/><br/>
-        I want to not only continue working on the skills I've developed over the course of the game jam, but to take the lessons learned and apply them to my work moving forward.
-
-        <h2>Project Links</h2>
-        <div style="display: flex;">
-          <a href="https://kwiper01.itch.io/hell-gene" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for Hell Gene"></a>
-          <a href="https://github.com/Kwiper/EmergencyGame" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for Hell Gene"></a>
-        </div>
-      </div>
-    </section>
-  </body>
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>

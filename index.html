@@ -1,66 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<!--Site head-->
-  <head>
-    <meta charset="utf-8">
-    <title>Herman Chan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Herman Chan</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
-    <link href="./css/font-style.css" rel="stylesheet">
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <!-- Custom JS -->
+        <script defer src="./scripts/content.js"></script>
+    </head> 
 
-    <script defer src="./content.js"></script>
-  </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- HEADER -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-  <body>
-    <!--Sidebar-->
-    <nav class="sidenav">
-      <ul>
-        <li><a href="/"><img src="img/Icon.png" alt="Page Icon" class="sidebar-icon"></a></li>
-        <li class="text-link"><a href="/#">HOME</a></li>
-        <li class="text-link"><a href="/#game">GAMES</a></li>
-        <li class="text-link"><a href="/#ux">UX</a></li>
-      </ul>
-    </nav>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <section id="landing" class="about content">
-      <div class="abt-flex">
-        <div class="abt-img">
-          <img src="img/AboutImage.jpg">
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+        <section class="container-fluid hero" id="bio" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('./img/AboutImage.jpg');">
+            <div class="hero-titles">
+                <h2 class="display-2">Hi, I'm Herman!</h2>
+                <h2>Game Designer · UX Designer</h2>
+    
+                <p class="bio-info">
+                    I'm a designer dedicated to crafting engaging experiences for users, whether it's through compelling narratives or seamless interactions. I continuously push my limits - to learn, refine, design, repeat - in order to enhance the human experience.
+                </p>
+    
+                <p class="bio-info">
+                    The tools I work with includes Unity, Figma, HTML/CSS/JS, the Adobe Creative Suite, and more. If you're interested in my projects or skills, let's connect!
+                </p>
+
+                <div class="mt-4">
+                    <a href="mailto:kybre.work@gmail.com" class="text-decoration-none me-2">
+                        <img class="bio-icon" src="img/icons/emailIconLight.png" alt="Link to Herman's Email">
+                    </a>
+                    <a href="tel:+17789177395" class="text-decoration-none me-2">
+                        <img class="bio-icon" src="img/icons/phoneIconLight.png" alt="Link to Herman's Phone Number">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/" class="text-decoration-none me-2">
+                        <img class="bio-icon" src="./img/icons/linkedinIconLight.png" alt="Link to Herman's LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="items">
+            <section id="games" class="item">
+                <h1 class="display-1 ps-5 pb-5">Game Projects</h1>
+            </section>
+    
+            <section id="other" class="item">
+                <h1 class="display-1 ps-5 pb-5">Other Projects</h1>
+            </section>
+        </section>
+
+        <div class="container">
+            <section id="cv">
+                <h2>Resume</h2>
+                <div class="cv-box my-4 px-4 py-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="cv-icon me-3" src="./img/icons/expIcon.png" alt="Experience Icon">
+                        <h3 class="mb-0">Experience</h3>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="mb-0">Broadcast / Event Producer - MountainSide Games</h5>
+                        <p class="mb-2"><i>(August 2021 - Present)</i></p>
+                        <ul>
+                            <li>
+                                Produced events and live broadcasts for the local and international Super Smash Bros. Ultimate community, managing broadcasts that have reached upwards of 50,000 viewers.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="mb-0">Graphic Design Intern - AGvisorPRO</h5>
+                        <p class="mb-2"><i>(January 2022 - August 2022)</i></p>
+                        <ul>
+                            <li>
+                                Redesigned, launched and maintained the company website as a central platform to promote the app, in addition to designing graphic advertisements, presentations, print materials and other digital assets.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="cv-icon me-3" src="./img/icons/eduIcon.png" alt="Experience Icon">
+                        <h3 class="mb-0">Education</h3>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="mb-0">BSc. Interactive Arts & Technology</h5>
+                        <p class="mb-0">Simon Fraser University</p>
+                        <p class="mb-2"><i>(2019 - 2024)</i></p>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="cv-icon me-3" src="./img/icons/skillsIcon.png" alt="Experience Icon">
+                        <h3 class="mb-0">Skills</h3>
+                    </div>
+                    
+                    <div>
+                        <h6 class="mb-1">Development:</h6>
+                        <p>Unity · JS · HTML · CSS · Python · Java · C# · Dash · SQL · Cytoscape · Arduino · Git · GitHub</p>
+                    </div>
+
+                    <div>
+                        <h6 class="mb-1">Design & Media:</h6>
+                        <p>Figma · Adobe Illustrator · Adobe Photoshop · Adobe XD · Adobe InDesign · Adobe AfterEffects · Adobe Premier Pro · Aseprite · OBS · vMix</p>
+                    </div>
+                </div>
+                <!-- View as PDF Button -->
+                <a href="herman-chan-resume.pdf" class="btn btn-secondary text-decoration-none me-2 mb-5" role="button">View PDF</a>
+            </section>
+
+            <section id="contact">
+                <h2 class="mb-4">Contact Information</h2>
+                <div class="cv-box my-4 px-4 py-4">
+                    <div class="mb-3">
+                        <a href="mailto:kybre.work@gmail.com" class="contact-info text-decoration-none d-flex">
+                            <img class="cv-icon me-2" src="img/icons/emailIconDark.png" alt="Link to Herman's Email">
+                            kybre.work@gmail.com
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="mailto:kybre.work@gmail.com" class="contact-info text-decoration-none d-flex">
+                            <img class="cv-icon me-2" src="img/icons/phoneIconDark.png" alt="Link to Herman's Phone Number">
+                            +1 (778) 917-7385
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:kybre.work@gmail.com" class="contact-info text-decoration-none d-flex">
+                            <img class="cv-icon me-2" src="./img/icons/linkedinIconDark.png" alt="Link to Herman's LinkedIn">
+                            www.linkedin.com/in/herman-chan-0312/
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="abt-text">
-          <h1 class="abt-title">Hello, I'm Herman!</h1>
-          <h3 class="abt-subtitle">UX Designer · Game Designer</h3>
-          <div class="abt-para">
-            As a designer, I strive to create experiences - especially ones that imprint themselves into people's hearts, and provide tales beyond the design itself! I’m always trying to push the boundaries of what’s possible with my designs and digital experiences; to break through the screens and medium to explore how every day can be made better! <br/> <br/>
 
-            I use a variety of tools in my work, including but not limited to: Unity, Figma, HTML/CSS, Adobe Photoshop, Adobe Premier Pro and more! If any of my projects or skills interest you, feel free to reach out! <br/> <br/>
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
 
-          </div>
-          <div class="abt-contact">
-            Email: hmchan@sfu.ca <br/>
-            Phone: 778-917-7385 <br/> <br/>
-
-            <a href="https://github.com/Kybre"><img src="img/githubIcon.png" class="contact-icon"></a>
-            <a href="https://www.linkedin.com/in/herman-chan-0312/"><img src="img/linkedinIcon.png" class="contact-icon"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="game" class="item content">
-      <h1 class="section-header">Game Projects</h1>
-    </section>
-
-    <section id="ux" class="item content">
-      <h1 class="section-header">UX Projects</h1>
-    </section>
-
-  </body>
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>

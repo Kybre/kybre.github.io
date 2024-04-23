@@ -1,96 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<!--Site head-->
-  <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Kalmont Mountain Safety and Rescue Team Website</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
-    <title>KMSRT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/grid.css" rel="stylesheet">
-    <link href="./css/font-style.css" rel="stylesheet">
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-    <script src="./titleAdjust.js"></script>
-  </head>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-  <body>
-    <!--Sidebar-->
-    <nav class="sidenav">
-      <ul>
-        <li><a href="/"><img src="img/Icon.png" alt="Page Icon" class="sidebar-icon"></a></li>
-        <li class="text-link"><a href="/#">HOME</a></li>
-        <li class="text-link"><a href="/#game">GAMES</a></li>
-        <li class="text-link"><a href="/#ux">UX</a></li>
-      </ul>
-    </nav>
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <section id="main" class="content">
-      <img src="img/KMSRT/kmsrt.png" alt="Front Page of KMSRT website." id="proj-header" class="kmsrt">
-      <div class="proj">
-        <h1 id="proj-title">Kalmont Mountain Safety and Rescue Team Website</h1>
-        <h3 id="proj-cat">Web Design/Development Project</h3>
-        Role: Designer/Developer <br/><br/>
-        Collaborators: Jonathan Newman, Taylor Liu <br/><br/>
-        Duration: 2 months (June 2020 - August 2020)<br/><br/>
-        Tools Used:
-        <ul>
-          <li>Figma (Prototyping)</li>
-          <li>HTML/CSS (Development)</li>
-        </ul>
-        <p class="disclaimer">
-          <b>Disclaimer:</b>
-          I do not own any of the images and most of the content on the website. For a full list of references, please visit <a href="http://www.sfu.ca/~jlnewman/WorkingTitle_KMSRT/references.html" class="ref">this</a> reference page.
-        </p>
-        <h2>Project Description</h2>
-        The Kalmont Mountain Safety and Rescue Team (KMSRT) Website is an informational website designed and developed as part of the class IAT 235: Information Design. <br/><br/>
-        The KMSRT Website contains tips on conquering the winter outdoors as well as regional news and info, all contained in a responsive website designed for use on any device. <br/><br/>
-        Through this project, I wanted to learn more about web design and how information can be structured for ease of access and formatted for readability.
-
-        <div class="proj-img">
-          <img src="img/KMSRT/hypoimg.png" alt="Sample screen of Hypothermia page.">
-          <figcaption>Sample screenshot of Hypothermia page. Graphics made by Taylor Liu.</figcaption>
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/KMSRT/kmsrt.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Kalmont Mountain Safety and Rescue Team Website</h1>
+                <h2>Web Design / Development Project</h2>
+            </div>
         </div>
 
-        <h2>Features</h2>
-        The KMSRT Website consists of 3 larger articles containing information on how to deal with avalanches, hypothermia, and mountain safety. <br/><br/>
-        The website also contains fictional news articles detailing the current happenings in the fictional region, as well as a fictional page introducing the team and its history.
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#design">Design</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#dev">Development</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
 
-        <h2>Planning</h2>
-        During the planning process, each of us created draft mockups to visualize how we would individually design a website like this. We then combined different elements of our drafts to create the group’s collective draft for the website. Initially, I designed my mockups while prioritizing readability and ease of access, and tried to choose colours that represented both the rescue aspect of the organization in a light red, as well as the winter outdoors, with a light gray close to white and a light blue. <br/> <br/>
-        Ultimately, however, the group opted for a mix between mostly Taylor and Jonathan's designs for the site, as Taylor's colour pallete and content sectioning were the most eye-pleasing and Jonathan's drafts had interesting layouts and stylistic elements that provided a unique style to the website.
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="proj-img proj-process">
-          <div class="proj-process-item proj-60">
-            <img src="img/KMSRT/abtdraft.png" alt="Personal draft of the website's About page.">
-            <figcaption>My personal draft of the website's About page...</figcaption>
-          </div>
-          <div class="proj-process-item proj-40">
-            <img src="img/KMSRT/abtgrpdraft.png" alt="Group draft of the website's About page.">
-            <figcaption>...and the group's final draft of the About page!</figcaption>
-          </div>
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Designer / Developer</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li>Jonathan Newman</li>
+                    <li>Taylor Liu</li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Figma (Prototyping)</li>
+                    <li>HTML/CSS</li>
+                </ul>
+
+                <h5 class="mb-4">Duration: 2 months (June 2020 - August 2020)</h5>
+                <h6>Disclaimer:</h6>
+                <p>
+                    I do not own any of the images and most of the content on the website. For a full list of references, please visit <a href="http://www.sfu.ca/~jlnewman/WorkingTitle_KMSRT/references.html" class="ref">this</a> reference page.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+                <div class="proj-media">
+                    <img src="./img/KMSRT/hypoimg.png" class="w-100" alt="Sample screen of Hypothermia page.">
+                    <figcaption>Sample screenshot of Hypothermia page.</figcaption>
+                </div>
+            </section>
+            
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    The Kalmont Mountain Safety and Rescue Team (KMSRT) Website is an informational website designed and developed as part of the class IAT 235: Information Design - containing tips on conquering the winter outdoors as well as regional news and info in a responsive website designed for use on any device.
+                </p>
+                <p>
+                    The KMSRT Website consists of 3 larger articles containing information on how to deal with avalanches, hypothermia, and mountain safety. The website also contains fictional news articles detailing the current happenings in the fictional region, as well as a fictional page introducing the team and its history.
+                </p>
+                <p>
+                    Through this project, I wanted to learn more about web design and how information can be structured for ease of access and formatted for readability.
+                </p>
+            </section>
+
+            <section class="proj-section" id="design">
+                <h2>Ideation & Design</h2>
+                <p>
+                    During the planning process, each of us created draft mockups to visualize how we would individually design a website like this. We then combined different elements of our drafts to create the group’s collective draft for the website. Initially, I designed my mockups while prioritizing readability and ease of access, and tried to choose colours that represented both the rescue aspect of the organization in a light red, as well as the winter outdoors, with a light gray close to white and a light blue.
+                </p>
+                <p>
+                    Ultimately, however, the group opted for a mix between mostly Taylor and Jonathan's designs for the site, as Taylor's colour pallete and content sectioning were the most eye-pleasing and Jonathan's drafts had interesting layouts and stylistic elements that provided a unique style to the website.
+                </p>
+                <div class="thin-2col">
+                    <div class="d-flex proj-media-2col">
+                        <div class="proj-media">
+                            <img src="./img/KMSRT/abtdraft.png" class="w-100" alt="Personal draft of the website's About page.">
+                            <figcaption>My personal draft of the website's About page...</figcaption>
+                        </div>
+                        <div class="proj-media">
+                            <img src="./img/KMSRT/abtgrpdraft.png" class="w-100" alt="Group draft of the website's About page.">
+                            <figcaption>...and the group's final draft of the About page!</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section" id="dev">
+                <h2>Development</h2>
+                <div class="proj-media">
+                    <img src="./img/KMSRT/dev.png" class="w-100" alt="Sample HTML from Hypothermia page.">
+                    <figcaption>
+                        Sample HTML from Hypothermia page. Shown is the HTML for the Other pages section, near the bottom of the page past the content.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    In creating this website, I was able to learn the basics of web development and design, and how to structure content in a website for informational purposes. Using these newfound skills, I hope to further hone my skills in web design and development to create websites for a variety of different purposes.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="http://www.sfu.ca/~jlnewman/WorkingTitle_KMSRT/index.html" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/newWindow.png" alt="Page Link for KMSRT Website">
+                </a>
+                <a href="https://github.com/Kybre/Kalmont_Website" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/githubIconDark.png" alt="GitHub Link for KMSRT Website">
+                </a>
+            </section>
         </div>
 
-        <h2>Process</h2>
-        <div class="proj-img" style="margin-top: 0;">
-          <img src="img/KMSRT/dev.png" alt="Sample HTML from Hypothermia page.">
-          <figcaption>Sample HTML from Hypothermia page. Shown is the HTML for the Other pages section, near the bottom of the page past the content.</figcaption>
-        </div>
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="mailto:kybre.work@gmail.com">
+                        <img class="socials-icon" src="./img/icons/emailIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="tel:+17789177385">
+                        <img class="socials-icon" src="./img/icons/phoneIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                </div>
+            </div>
 
-        <h2>Takeaways</h2>
-        In creating this website, I was able to learn the basics of web development and design, and how to structure content in a website for informational purposes. Using these newfound skills, I hope to further hone my skills in web design and development to create websites for a variety of different purposes.
-
-        <h2>Project Links</h2>
-        <div style="display: flex;">
-          <a href="http://www.sfu.ca/~jlnewman/WorkingTitle_KMSRT/index.html" style="width: 3rem; margin-right: 0.5rem;"><img src="img/newWindow.png" alt="Page Link for KMSRT Website"></a>
-          <a href="https://github.com/Kybre/Kalmont_Website" style="width: 3rem;"><img src="img/githubIcon.png" alt="GitHub Link for KMSRT Website"></a>
-        </div>
-      </div>
-    </section>
-  </body>
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>

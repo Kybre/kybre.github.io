@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>The Great Peking Peak Escape</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- original font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/icons/whiteicon.png" alt="Avatar Logo">
+                    </a>
+
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#bio">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                    <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/GPPE/title.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">The Great Peking Peak Escape</h1>
+                <h2>Game Design / Development Project</h2>
+            </div>
+        </div>
+
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#art">Art & Animation</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#level">Level</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#art">Art & Animation</a></li><hr>
+                            <li><a class="dropdown-item" href="#level">Level</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="proj-section" id="project-intro">
+                <h2 class="my-4">Project Overview</h2>
+                <h5 class="mb-4">Role: Level Designer, 2D Artist</h5>
+
+                <h5>Collaborators:</h5>
+                <ul class="mb-4">
+                    <li>Komi (Matthew)</li>
+                    <li>ozcer (Oscar)</li>
+                    <li>Xinnoh (Zac)</li>
+                    <li>Aman_m007 (Arman)</li>
+                </ul>
+
+                <h5>Tools Used:</h5>
+                <ul class="mb-4">
+                    <li>Unity (C#)</li>
+                    <li>Aseprite (Pixel Art)</li>
+                </ul>
+
+                <h5>Duration: 24 Hours (July 1st 2023 - July 2nd 2023)</h5>
+            </section>
+
+            <section class="proj-section" id="project-video">
+                <h2>Project Video</h2>
+                <div class="proj-media">
+                    <video height="auto" controls muted>
+                        <source src="./img/GPPE/gameplay.mp4" type="video/mp4" alt="Gameplay video of The Great Peking Peak Escape.">
+                          Video cannot be played.
+                    </video>
+                </div>
+            </section>
+            
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    The Great Peking Peak Escape was a submission to SFU Game Dev's Mountain Top Game Jam 2023, under the theme of "Peak". In The Great Peking Peak Escape, you play as a duck who has found itself in the belly of a kitchen, and are trying to escape the fate of being roasted for dinner. In order to escape as the flightless bird, the player must utilize rope and a butcher's hook as a makeshift grappling hook to swing and glide your way to freedom.
+                </p>
+                <p>
+                    In this project, my main contributions were creating the art and animations for the game, in addition to collaborating on level design.
+                </p>
+            </section>
+
+            <section class="proj-section" id="art">
+                <h2>Art & Animation</h2>
+                <h3>Character Design & Animation</h3>
+                <p>
+                    We initially decided on the direction of having a duck as our main character due to the pun within "Peak"ing Duck, given our theme. From there, as I was in charge of the visual assets we were to use, I decided that a light-hearted, comedic approach would be best at drawing out the appeal of our game and its narrative. Large, exaggerated motions and poses were key as a lack of facial features made certain expressions hard to convey.
+                </p>
+                <div class="proj-media my-4">
+                    <img src="./img/GPPE/duck.gif" class="w-50" alt="GIF cycling through different animation states for the duck.">
+                    <figcaption>GIF cycling through different animation states for the duck.</figcaption>
+                </div>
+
+                <h3>Level Assets</h3>
+                <p>
+                    One asset I spent a lot of time refining during the jam was the tileset used to lay out the level. As our level design consisted of several surfaces, I needed to ensure that a cursory glance of a given tile would inform the player of its properties. In order to make my process as efficient as possible, I started by defining all the variants I would need as shapes - sloped tiles, edge tiles and corner tiles - before drawing the textures to go over them. This approach allowed me to quickly make new tilesets as they became necessary.
+                </p>
+                <div class="proj-media my-5">
+                    <img src="./img/GPPE/tileset.png" class="w-100" alt="Tileset used for The Great Peking Peak Escape's level design.">
+                    <figcaption>Tileset used for The Great Peking Peak Escape's level design.</figcaption>
+                </div>
+                <p>
+                    Further expanding on the idea of a comedic approach, I brought up the idea to use random objects you would find in a kitchen to be incorporated into level design, similar to certain games within the genre like Getting Over It or Only Up. These objects helped further anchor the game's setting and mood, to suit the duck's exaggerated animations.
+                </p>
+                <div class="proj-media my-5">
+                    <img src="./img/GPPE/objects.png" class="w-100" alt="Some of the many objects created to be used as random kitchen objects in level design.">
+                    <figcaption>Some of the many objects created to be used as random kitchen objects in level design.</figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="level">
+                <h2>Level Design</h2>
+                <p>
+                    Due to the theme of this jam being "Peak", we partially interpreted the theme in such as the player reaching the "peak" of their abilities and overcoming a difficult challenge in pursuing a sense of achievement. As a result, we began to draw inspiration from games such as Getting Over It and Jump King - games that revolved around singular mechanics, but had very punishing level design where failure could set you very far back.
+                </p>
+                <p>
+                    My contributions to the level struck a balance between the difficult level design seen in these games, as well as balancing the light-hearted humor of our narrative via abstract challenges involving the aforementioned random kitchen objects, and "traps" that aim to provide memorable comedic bits for players.
+                </p>
+                <div class="proj-media my-4">
+                    <img src="./img/GPPE/level.png" class="w-100" alt="Level design screenshot of The Great Peking Peak Escape, showing the design for the final sections of the level.">
+                    <figcaption>
+                        Level design screenshot of The Great Peking Peak Escape, showing the design for the final sections of the level.
+                    </figcaption>
+                </div>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Overall, I believe this project has helped me further refine my skills in level design and pixel art, and served as a very valuable experince in scoping a project properly. I was able to think on my feet and communicate effectively with my team, enabling productive means of feedback in spite of the short amount of time we had.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://ozcer.itch.io/peking" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/newWindow.png" alt="itch.io Link for The Great Peking Peak Escape">
+                </a>
+                <a href="https://github.com/ozcer/MountaintopGameJam" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/githubIconDark.png" alt="GitHub Link for The Great Peking Peak Escape">
+                </a>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex bg-primary">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container w-80">
+                <ul>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="index.html#cv">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

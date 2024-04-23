@@ -1,4 +1,4 @@
-let uxData = [
+let otherData = [
 	{
 		img:"./img/Scrapbook/title.png",
 		title:"Scrapbook",
@@ -18,6 +18,22 @@ let uxData = [
 ]
 
 let gameData = [
+//	{
+//		img:"./img",
+//		title:"Kart Klash",
+//		ctgr:"Game Design/Development Project",
+//		content:"[Page WIP]",
+//		tools:"Unity, C#",
+//		link:"",
+//	},
+//	{
+//		img:"./img",
+//		title:"Akimbo Corps",
+//		ctgr:"Game Design/Development Project",
+//		content:"[Page WIP]",
+//		tools:"Unity, C#",
+//		link:"",
+//	},
 //	{
 //		img:"./img/GPPE/title.png",
 //		title:"The Great Peking Peak Escape",
@@ -81,7 +97,7 @@ gameData.forEach((data) => {
 	appendContent(parent, data);
 })
 
-uxData.forEach((data) => {
+otherData.forEach((data) => {
 	const parent = document.querySelector("#ux");
 	appendContent(parent, data);
 })
@@ -114,7 +130,7 @@ function appendContent(parent, {img, title, ctgr, content, tools, link}){
 	tol.style.marginTop = "1rem";
 	/*
 	<img src="img/Kingslayer.png">
-	<a href="page.html" class="item-content">
+	<a href="page.html" class="item-desc">
 		<h1> Title </h1>
 		<div> content </div>
 	</div>

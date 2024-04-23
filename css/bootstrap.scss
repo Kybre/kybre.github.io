@@ -1,0 +1,21 @@
+$primary: #202020 !default; //change default color to dark gray
+$secondary: #606060 !default; 
+
+$display-font-sizes: (
+  1: 6rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$headings-font-family: 'Red Hat Display' !default;
+$display-font-family: 'Playball' !default;
+
+$btn-font-family: 'Lato' !default;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/_functions";
+@import "./node_modules/bootstrap/scss/_utilities";
+@import "./node_modules/bootstrap/scss/_variables";
